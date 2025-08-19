@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D3433,Malicious,0.92,High behavioral sandbox score (0.62) with macro-enabled document (0.96) and VBScript detection (0.15) plus authentication failures (SPF fail, DMARC fail) and 3 malicious components detected clearly indicate active malware
+D3434,Malicious,0.88,Multiple YARA matches (3) combined with high behavioral sandbox score (0.35) and macro-enabled documents (0.29) with high content spam score (0.56) and authentication failures confirm malicious payload
+D3435,Malicious,0.95,Legal threat request type with extremely high VBScript/JavaScript (0.83) and ActiveX detection (0.92) plus return path mismatch and QR code analysis positive indicate sophisticated social engineering malware
+D3436,Malicious,0.94,Maximum exfiltration behavior score (0.96) with macro-enabled documents (0.73) and embedded files plus high VBScript detection (0.76) clearly indicate data theft malware
+D3437,Malicious,0.96,Sender spoofing detected (1.0) with self-signed SSL certificate and 5 malicious components detected plus authentication failures confirm deliberate malicious impersonation with payload
+D3438,Malicious,0.91,High sender reputation risk (0.65) with invoice verification request type and high VBScript/JavaScript (0.58) plus multiple authentication failures indicate business email compromise attack
+D3439,Spam,0.82,High sender reputation risk (0.60) with moderate content spam score (0.31) but no clear malicious payload indicators and authentication failures suggest bulk commercial messaging
+D3440,Warning,0.71,Moderate sender reputation (0.31) with macro-enabled documents (0.41) but low threat scores and no specific request type suggest potential risk requiring monitoring
+D3441,Malicious,0.89,Extremely high macro-enabled document score (0.92) with high VBScript detection (0.72) and expired SSL certificate plus authentication inconsistencies indicate malware delivery
+D3442,Malicious,0.86,Meeting request with behavioral sandbox score (0.52) and 3 malicious components plus expired SSL certificate and authentication failures confirm calendar-based phishing with malware
+D3443,Warning,0.73,Sensitive data request type with macro-enabled documents (0.57) and VBScript detection (0.73) but mixed authentication results require monitoring without definitive malicious confirmation
+D3444,Malicious,0.85,Multiple YARA matches (5) with high exfiltration score (0.80) and unsubscribe link present plus expired SSL certificate suggest evasive malicious campaign
+D3445,Malicious,0.93,Extremely high sender reputation risk (0.74) with strong authentication failures and high-risk role targeting confirm advanced malicious campaign
+D3446,Warning,0.68,Link click request with macro-enabled documents (0.69) and moderate authentication issues but valid SSL certificate suggest potentially risky activity
+D3447,Malicious,0.97,Extremely high sender reputation risk (0.90) with 9 IOCs and behavioral sandbox detection (0.20) plus 5 malicious components confirm sophisticated threat
+D3448,Malicious,0.94,Very high sender reputation risk (0.84) with invoice payment request and maximum exfiltration score (0.72) plus high-risk role targeting indicate targeted financial fraud
+D3449,Malicious,0.96,Six malicious attachments with high exfiltration score (0.68) and SSL certificate mismatch clearly indicate malware distribution campaign
+D3450,Warning,0.66,Meeting request with authentication failures and self-signed SSL but low threat indicators suggest potential social engineering requiring monitoring
+D3451,Malicious,0.97,Invoice verification request with maximum exfiltration score (0.99) and high behavioral sandbox (0.53) plus embedded files indicate sophisticated financial fraud malware
+D3452,Malicious,0.95,Extremely high sender reputation risk (0.89) with expired SSL certificate and multiple authentication failures confirm advanced malicious infrastructure
+D3453,Malicious,0.94,Gift card request with 3 malicious attachments and exploit pattern detected (1) plus high-risk role targeting clearly indicate social engineering fraud with malware
+D3454,Malicious,0.98,Maximum sender reputation risk (0.97) with expired SSL certificate and extremely high content spam score (0.93) plus 4 malicious components confirm malicious campaign
+D3455,Malicious,0.92,Credential request with high metadata suspicious score (0.81) and high exfiltration behavior (0.49) plus authentication failures indicate credential harvesting attack
+D3456,Warning,0.69,High sender reputation (0.35) with self-signed SSL certificate and mixed authentication results require monitoring but lack definitive malicious indicators
+D3457,Malicious,0.95,High sender reputation risk (0.84) targeting high-risk role (1) with extremely high temp email likelihood (0.99) and self-signed SSL confirm sophisticated spear phishing
+D3458,Warning,0.67,YARA match with high exfiltration score (0.85) but low sender risk and self-signed SSL suggest potential threat requiring monitoring
+D3459,Warning,0.70,High sender reputation (0.40) with high temp email likelihood (0.32) and self-signed SSL but mixed authentication results require evaluation
+D3460,Malicious,0.87,Link click request with return path mismatch (1) and high temp email likelihood (0.45) plus authentication failures indicate targeted attack
+D3461,Malicious,0.86,Document download request with extremely high behavioral score (0.88) and high exfiltration score (0.79) plus embedded files indicate malware delivery
+D3462,Malicious,0.89,High temp email likelihood (0.92) with behavioral sandbox score (0.76) and URL shortener usage plus embedded files suggest sophisticated malware campaign
+D3463,Warning,0.74,High sender reputation (0.36) with mixed authentication results but valid SSL certificate and low threat indicators require monitoring
+D3464,Malicious,0.84,High sender reputation risk (0.67) with suspicious metadata (0.34) and high exfiltration score (0.81) plus authentication failures confirm malicious intent
+D3465,Warning,0.72,Gift card request with high HTML ratio (1.1) but mixed authentication and low threat scores require monitoring
+D3466,Malicious,0.83,Meeting request targeting high-risk role (1) with high sender reputation (0.54) and authentication failures indicate spear phishing attack
+D3467,Malicious,0.94,High sender reputation risk (0.72) with expired SSL certificate and authentication inconsistencies plus 1 malicious component confirm threat
+D3468,Malicious,0.91,Confirmed malicious file hash (1) with YARA match and domain marked malicious (1) plus expired SSL certificate confirm active threat
+D3469,Malicious,0.88,High suspicious metadata score (0.76) with behavioral sandbox (0.43) and embedded files plus authentication failures indicate malicious payload
+D3470,Malicious,0.92,VPN/MFA reset request with sender spoofing (1.0) and extremely high temp email likelihood (0.86) clearly indicate credential theft attack
+D3471,Warning,0.71,High sender reputation (0.53) with high-risk role targeting (1) but mixed authentication and low threat scores create uncertainty
+D3472,Malicious,0.90,Meeting request with high sender reputation risk (0.81) and URL shortener usage plus authentication failures indicate sophisticated phishing
+D3473,Warning,0.76,Bank detail update request with return path known malicious (1) but mixed authentication results require careful monitoring
+D3474,Warning,0.73,Invoice verification with moderate authentication issues and self-signed SSL but mixed threat signals need investigation
+D3475,Malicious,0.95,High sender reputation risk (0.79) with revoked SSL certificate and authentication failures confirm malicious infrastructure
+D3476,Malicious,0.92,High sender reputation risk (0.72) with bank detail update request and expired SSL certificate indicate targeted financial fraud
+D3477,Warning,0.71,Gift card request with YARA matches (3) and unsubscribe link present but mixed authentication results require monitoring
+D3478,Warning,0.70,High suspicious metadata score (0.49) with authentication failures but low sender risk scores suggest potential threat
+D3479,Malicious,0.84,High behavioral sandbox score (0.13) with macro-enabled documents (0.85) and high VBScript detection (0.79) plus self-signed SSL indicate malware
+D3480,Warning,0.69,High temp email likelihood (0.68) with high VBScript detection (0.81) but mixed authentication results require monitoring
+D3481,Malicious,0.94,Urgent callback request with high macro-enabled documents (0.63) and high VBScript detection (0.57) plus expired SSL confirm malicious intent
+D3482,Malicious,0.91,Extremely high sender reputation risk (0.93) with authentication failures and high sender name similarity (0.54) confirm malicious impersonation campaign

@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D3683,Malicious,0.87,High sender reputation risk (0.66) with macro-enabled documents (0.96) and high exfiltration score (0.64) plus high VBScript detection (0.29) indicate malware threat
+D3684,Warning,0.74,Moderate sender risk (0.38) with VPN/MFA reset request and 2 URLs plus macro-enabled documents (0.37) require monitoring despite good authentication
+D3685,Warning,0.73,Moderate sender risk (0.33) with macro-enabled documents (0.92) and high VBScript detection (0.75) but good authentication require monitoring
+D3686,Malicious,0.85,Moderate sender risk (0.53) with meeting request and macro-enabled documents (0.92) plus 3 malicious components detected clearly indicate threat
+D3687,No Action,0.88,Very low sender reputation risk (0.03) with bank detail update request but good authentication and valid SSL indicate legitimate business communication
+D3688,Malicious,0.89,Very high sender reputation risk (0.82) with invoice verification request and high ActiveX detection (0.94) plus high URL reputation score (0.44) indicate financial fraud
+D3689,Malicious,0.94,Extremely high sender reputation risk (0.92) with DMARC enforced (1) and reply path known malicious (1) plus high temp email likelihood (0.83) confirm advanced threat
+D3690,Malicious,0.88,High sender risk (0.66) with bank detail update request and QR code analysis (1) plus high URL reputation clearly indicate financial fraud
+D3691,Malicious,0.86,High sender risk (0.66) with gift card request and high suspicious metadata (0.27) plus high ActiveX detection (0.88) and URL decoded spoof detected (1) indicate social engineering
+D3692,Malicious,0.91,Extremely high sender reputation risk (0.89) with high behavioral sandbox score (0.36) and high VBScript detection (0.90) plus URL shortener detected (1) confirm advanced malware
+D3693,Malicious,0.90,Very high sender reputation risk (0.83) with return path mismatch (1) and high AMSI suspicion score (0.46) plus high URL reputation score (0.98) indicate bypass attempt
+D3694,No Action,0.87,Low sender reputation risk (0.14) with good authentication results and valid SSL certificate indicate legitimate email
+D3695,Malicious,0.88,Very high sender reputation risk (0.78) with urgent callback request and high content spam score (0.64) plus high VBScript detection (0.72) indicate social engineering
+D3696,No Action,0.86,Very low sender reputation risk (0.06) with macro-enabled documents (0.83) but good authentication and 5 malicious components suggest acceptable business risk with security tools flagging
+D3697,Malicious,0.87,Moderate sender risk (0.55) with 1 YARA match and 1 IOC plus high exfiltration score (0.98) and self-signed SSL certificate clearly indicate malware
+D3698,Malicious,0.88,Very high sender reputation risk (0.80) with 2 URLs and URL shortener detected (1) plus self-signed SSL certificate indicate phishing campaign
+D3699,Malicious,0.89,Very high sender reputation risk (0.81) with high VBScript detection (0.87) and 4 URLs detected indicate threat
+D3700,Malicious,0.93,Extremely high sender reputation risk (0.94) with DMARC enforced (1) and gift card request plus high URL reputation score (0.60) confirm financial fraud
+D3701,Warning,0.74,Moderate sender risk (0.38) with bank detail update request and high VBScript detection (0.71) but good authentication require monitoring
+D3702,Warning,0.75,DMARC enforced (1) with moderate sender risk (0.31) and reply path known malicious (1) plus expired SSL certificate require monitoring
+D3703,Malicious,0.86,Moderate sender risk (0.56) with return path known malicious (1) and high behavioral sandbox score (0.23) plus 5 malicious components detected indicate threat
+D3704,Malicious,0.87,Moderate sender risk (0.53) with high suspicious metadata (0.17) and high exfiltration score (0.62) plus high URL reputation score (0.47) indicate advanced threat
+D3705,Warning,0.76,Low sender risk (0.03) with 4 YARA matches and extremely high suspicious metadata (0.69) plus return path known malicious (1) require monitoring
+D3706,Warning,0.75,Wire transfer request with low sender risk (0.19) but executable attachment (1) and very high temp email likelihood (0.97) require monitoring
+D3707,Malicious,0.88,High sender risk (0.71) with invoice verification request and 4 URLs plus 5 malicious components detected clearly indicate financial fraud
+D3708,Malicious,0.87,High sender risk (0.71) with wire transfer request and extremely high suspicious metadata (0.83) indicate financial fraud
+D3709,Malicious,0.88,Very high sender reputation risk (0.76) with invoice payment request and high AMSI suspicion score (0.64) plus 3 URLs indicate financial fraud
+D3710,Warning,0.72,Low sender risk (0.16) with urgent callback request and macro-enabled documents (0.76) but good authentication require monitoring
+D3711,Malicious,0.86,High sender risk (0.70) with VPN/MFA reset request and return path mismatch (1) plus return path known malicious (1) and 5 malicious components clearly indicate credential theft
+D3712,Warning,0.74,Moderate sender risk (0.45) with macro-enabled documents (0.78) and high VBScript detection (0.88) plus high content spam score (0.34) require monitoring
+D3713,Malicious,0.85,Moderate sender risk (0.42) with extremely high suspicious metadata (0.67) and high exfiltration score (0.42) plus domain marked malicious (1) clearly indicate threat
+D3714,Malicious,0.86,Moderate sender risk (0.54) with high exfiltration score (0.94) and QR code analysis (1) plus 3 malicious components detected indicate advanced threat
+D3715,Warning,0.74,Moderate sender risk (0.50) with legal threat request and bulk message indicator (1) plus macro-enabled documents (0.93) require monitoring
+D3716,Warning,0.73,Moderate sender risk (0.34) with document download request and high ActiveX detection (0.86) plus 2 malicious components require monitoring
+D3717,Spam,0.84,Gift card request with low sender risk (0.05) but return path known malicious (1) and very high temp email likelihood (0.96) plus high exfiltration score (0.90) suggest unwanted bulk messaging
+D3718,Warning,0.75,Moderate sender risk (0.33) with extremely high suspicious metadata (0.64) and high AMSI suspicion score (0.72) plus bulk message indicator (1) require monitoring
+D3719,Warning,0.74,Moderate sender risk (0.55) with urgent callback request and bulk message indicator (1) plus 4 URLs detected require monitoring
+D3720,Malicious,0.87,Moderate sender risk (0.51) with high AMSI suspicion score (0.58) and high exfiltration score (0.86) plus high VBScript detection (0.93) indicate malware
+D3721,Malicious,0.93,Extremely high sender reputation risk (0.95) with link click request and high URL reputation score (0.10) clearly indicate phishing campaign
+D3722,Malicious,0.86,Moderate sender risk (0.54) with 2 IOCs detected and high VBScript detection (0.87) plus 2 embedded files indicate threat
+D3723,Malicious,0.89,Very high sender reputation risk (0.79) with wire transfer request and 7 IOCs detected plus reply path known malicious (1) and high exfiltration score (0.97) confirm financial fraud
+D3724,Warning,0.72,Low sender risk (0.19) with wire transfer request and moderate temp email likelihood (0.12) but good authentication require monitoring
+D3725,Malicious,0.87,Moderate sender risk (0.57) with gift card request and extremely high behavioral sandbox score (0.87) plus URL decoded spoof detected (1) indicate social engineering
+D3726,Malicious,0.89,Very high sender reputation risk (0.82) with high content spam score (0.27) and high URL reputation score (0.31) indicate threat
+D3727,Warning,0.75,Moderate sender risk (0.51) with high suspicious metadata (0.08) and high exfiltration score (0.46) but good authentication require monitoring
+D3728,Warning,0.73,Moderate sender risk (0.36) with invoice verification request and temp email likelihood (0.12) plus 2 URLs require monitoring
+D3729,Malicious,0.89,Very high sender reputation risk (0.83) with extremely high suspicious metadata (0.48) and reply path known malicious (1) plus 1 URL detected indicate threat
+D3730,Malicious,0.88,High sender risk (0.75) with executable attachment (1) and 8 YARA matches plus 4 malicious components detected clearly indicate advanced malware
+D3731,Malicious,0.91,Very high sender reputation risk (0.84) with wire transfer request and QR code analysis (1) plus high VBScript detection (0.93) clearly indicate financial fraud
+D3732,Warning,0.74,Low sender risk (0.15) with reply path known malicious (1) and QR code analysis (1) plus 3 malicious components require monitoring

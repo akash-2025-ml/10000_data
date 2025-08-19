@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D3483,Warning,0.78,High temp email likelihood (0.67) with VBScript detection (0.87) and exfiltration behavior (0.60) require monitoring despite good authentication
+D3484,No Action,0.88,Low sender risk (0.19) with good authentication results and valid SSL certificate indicate legitimate email
+D3485,Malicious,0.93,Extremely high sender reputation risk (0.80) with ActiveX detection (0.75) and self-signed SSL certificate indicate malicious infrastructure
+D3486,Malicious,0.94,Very high sender reputation risk (0.82) with gift card request and authentication failures plus self-signed SSL confirm social engineering attack
+D3487,Malicious,0.96,Maximum sender reputation risk (0.93) with bank detail update request and final URL marked malicious (1) clearly indicate financial fraud
+D3488,Warning,0.76,High sender reputation risk (0.44) with macro-enabled documents (0.94) and 2 malicious components detected require monitoring
+D3489,Malicious,0.92,High sender reputation risk (0.71) with high suspicious metadata (0.58) and embedded files (2) plus 2 malicious components indicate advanced malware
+D3490,No Action,0.89,Very low sender risk (0.04) with good authentication and valid SSL certificate indicate legitimate email
+D3491,Malicious,0.86,High exfiltration score (0.90) with ActiveX detection (0.93) and 1 malicious component despite DMARC enforcement indicate bypass attempt
+D3492,Malicious,0.91,Packer detected (1) with wire transfer request and reply path known malicious (1) clearly indicate malicious campaign
+D3493,Malicious,0.95,Extremely high sender reputation risk (0.93) with invoice verification request and high sender similarity (0.84) indicate impersonation attack
+D3494,Malicious,0.93,High temp email likelihood (0.95) with wire transfer request and high behavioral sandbox score (0.93) plus 4 malicious components indicate financial fraud
+D3495,Malicious,0.94,Very high sender reputation risk (0.83) with invoice payment request and high exfiltration score (0.84) confirm financial fraud
+D3496,Warning,0.74,Urgent callback request with DMARC enforced (1) but 2 malicious components detected require monitoring
+D3497,Spam,0.86,High content spam score (0.69) with VPN/MFA reset request and high temp email likelihood (0.70) suggest unwanted bulk messaging
+D3498,Warning,0.73,High temp email likelihood (0.47) with macro-enabled documents (0.66) and 4 malicious components detected require monitoring
+D3499,Warning,0.74,YARA match with exfiltration score (0.60) and 3 malicious components plus self-signed SSL require monitoring
+D3500,Warning,0.76,High suspicious metadata (0.94) with macro-enabled documents (0.73) and high exfiltration score (0.81) require evaluation
+D3501,Malicious,0.91,High sender reputation risk (0.68) with legal threat request and high VBScript detection (0.95) indicate social engineering
+D3502,No Action,0.95,Extremely low sender risk (0.02) with document download request and perfect authentication plus valid SSL indicate legitimate file sharing
+D3503,Malicious,0.88,High sender reputation risk (0.66) with gift card request and reply path known malicious (1) plus self-signed SSL indicate fraud
+D3504,Malicious,0.92,Very high sender reputation risk (0.82) with high behavioral sandbox score (0.20) and 3 malicious components confirm malware
+D3505,No Action,0.91,Moderate sender reputation (0.41) with urgent callback and good authentication plus valid SSL indicate legitimate urgent communication
+D3506,Warning,0.68,Expired SSL certificate with 4 malicious components detected despite low sender risk require monitoring
+D3507,Malicious,0.94,Extremely high sender reputation risk (0.93) with link click request and reply path known malicious (1) indicate phishing
+D3508,Warning,0.77,High behavioral sandbox score (0.52) with 2 malicious components detected require monitoring despite good authentication
+D3509,Malicious,0.93,Wire transfer request with extremely high suspicious metadata (0.91) and authentication failures indicate financial fraud
+D3510,Malicious,0.85,Wire transfer request with high VBScript detection (0.88) and macro-enabled documents (0.53) plus self-signed SSL indicate fraud
+D3511,Malicious,0.91,Very high sender reputation risk (0.81) with gift card request targeting high-risk role (1) and 5 malicious components confirm spear phishing
+D3512,Malicious,0.89,High temp email likelihood (0.84) with high behavioral sandbox score (0.61) and 5 malicious components confirm threat
+D3513,Malicious,0.88,Domain marked malicious (1) with embedded files (4) and high ActiveX detection (0.96) plus 3 malicious components clearly indicate threat
+D3514,No Action,0.87,Moderate sender reputation (0.38) with invoice verification and good authentication plus valid SSL indicate legitimate business communication
+D3515,Warning,0.72,VBScript detection (0.75) with authentication failures and 5 malicious components plus self-signed SSL require monitoring
+D3516,Malicious,0.96,Maximum sender reputation risk (0.93) with 3 malicious attachments and high exfiltration score (0.73) clearly indicate malware
+D3517,Malicious,0.87,Wire transfer request with macro-enabled documents (0.73) and 3 malicious components plus authentication failures indicate fraud
+D3518,No Action,0.91,Moderate sender reputation (0.64) with good authentication and valid SSL certificate indicate legitimate email
+D3519,No Action,0.86,Low sender reputation risk (0.13) with revoked SSL certificate but good authentication and 1 malicious component suggest acceptable risk
+D3520,No Action,0.95,DMARC enforced (1) with excellent authentication balance and valid SSL certificate indicate well-configured legitimate sender
+D3521,No Action,0.88,Low sender reputation risk (0.14) with gift card request but good authentication and valid SSL suggest legitimate business communication
+D3522,Malicious,0.89,Wire transfer request with high suspicious metadata (0.61) and YARA matches (3) plus self-signed SSL indicate fraud
+D3523,Warning,0.76,Document download with high VBScript detection (0.92) and macro-enabled documents (0.87) require monitoring
+D3524,Warning,0.74,High VBScript detection (0.96) with 4 malicious components detected require monitoring despite good sender reputation
+D3525,Malicious,0.93,Very high sender reputation risk (0.89) with sensitive data request and expired SSL certificate indicate data theft
+D3526,Malicious,0.91,High sender reputation risk (0.81) with meeting request targeting high-risk role (1) and 2 malicious components confirm spear phishing
+D3527,Warning,0.77,High behavioral sandbox score (0.39) with embedded files (2) and macro-enabled documents (0.77) require monitoring
+D3528,No Action,0.85,Low sender reputation risk (0.17) with return path mismatch (1) but good authentication suggest acceptable risk
+D3529,Malicious,0.88,Legal threat request with high temp email likelihood (0.76) and maximum exfiltration score (0.97) plus 2 malicious components indicate threat
+D3530,Warning,0.75,Multiple YARA matches (6) with high VBScript detection (0.97) and 1 malicious component require monitoring
+D3531,No Action,0.87,Moderate sender reputation (0.35) with bank detail update but good authentication and high HTML ratio suggest legitimate business email
+D3532,Malicious,0.95,Maximum sender reputation risk (0.95) with VPN/MFA reset request and SSL certificate mismatch clearly indicate credential theft
