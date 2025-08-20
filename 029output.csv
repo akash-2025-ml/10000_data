@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4833,Malicious,0.90,High sender maliciousness (0.73) with meeting request and unscannable attachment combined with maximum exfiltration behavior (0.82) and exploit pattern detected indicate sophisticated malware delivery
+D4834,Warning,0.76,Moderate sender maliciousness (0.25) with sensitive data request but minimal technical threats suggest potential data harvesting attempt requiring investigation
+D4835,Warning,0.82,Moderate sender maliciousness (0.50) with high metadata suspicious score (0.38) and high spam score (0.72) combined with revoked SSL certificate suggest compromised infrastructure
+D4836,Warning,0.78,Moderate sender maliciousness (0.20) with very high temporary email likelihood (0.40) and very high site visual similarity (0.99) combined with self-signed SSL suggest brand impersonation attempt
+D4837,Malicious,0.85,Extremely high sender maliciousness (0.82) with link click request and 5 domains detected combined with high site visual similarity (0.62) indicate sophisticated attack infrastructure
+D4838,Malicious,0.87,Moderate sender maliciousness (0.33) with very high temporary email likelihood (0.16) and maximum exfiltration behavior (0.82) combined with high AMSI score (0.17) indicate evasive malware
+D4839,Malicious,0.86,High sender maliciousness (0.64) with invoice payment request and extremely high URL reputation score (0.94) combined with expired SSL certificate indicate invoice fraud malware
+D4840,Malicious,0.86,Moderate sender maliciousness (0.57) with very high temporary email likelihood (0.58) and exfiltration behavior (0.61) combined with final URL known malicious indicate confirmed malicious threat
+D4841,Malicious,0.87,Extremely high sender maliciousness (0.90) with meeting request and SSL certificate mismatch combined with high script detection (0.11) indicate malicious meeting invitation
+D4842,Malicious,0.88,Moderate sender maliciousness (0.39) with 8 YARA matches and invoice verification request combined with exfiltration behavior (0.53) and unsubscribe link indicate confirmed malware activity
+D4843,Malicious,0.85,High sender maliciousness (0.75) with reply path known malicious and high script detection (0.33) combined with authentication failures indicate compromised infrastructure attack
+D4844,Malicious,0.89,Moderate sender maliciousness (0.36) with gift card request and high metadata suspicious score (0.80) combined with maximum behavioral sandbox score (0.95) and maximum exfiltration behavior (0.71) indicate sophisticated scam malware
+D4845,Malicious,0.86,High sender maliciousness (0.79) with sender spoof detected and high script detection (0.74) combined with authentication failures indicate malicious spoofing attack
+D4846,Malicious,0.88,Moderate sender maliciousness (0.36) with credential request and 1 YARA match combined with high metadata suspicious score (0.48) and maximum exfiltration behavior (0.56) indicate credential theft malware
+D4847,Malicious,0.85,High sender maliciousness (0.65) with 2 malicious attachments and DMARC enforced combined with exfiltration behavior (0.62) and image-only email indicate confirmed malware delivery
+D4848,Warning,0.75,Very low sender maliciousness (0.01) with meeting request and very high temporary email likelihood (0.23) combined with self-signed SSL suggest social engineering attempt
+D4849,Malicious,0.91,Extremely high sender maliciousness (0.95) with 1 malicious attachment and high metadata suspicious score (0.07) combined with exfiltration behavior (0.63) indicate confirmed evasive malware
+D4850,Warning,0.80,Moderate sender maliciousness (0.21) with QR code analysis and very high site visual similarity but minimal technical threats suggest brand impersonation attempt
+D4851,Warning,0.81,High sender maliciousness (0.69) with link click request and revoked SSL certificate but minimal technical threats suggest potential compromise
+D4852,Malicious,0.82,Very low sender maliciousness (0.02) with document download request and executable attachment combined with expired SSL certificate indicate malware delivery
+D4853,Malicious,0.85,Moderate sender maliciousness (0.13) with very high temporary email likelihood (0.70) and extremely high AMSI score (0.99) combined with maximum exfiltration behavior (0.79) indicate sophisticated evasive malware
+D4854,Warning,0.79,High sender maliciousness (0.60) with very high temporary email likelihood (0.35) and extremely high URL reputation score (0.92) but minimal technical threats suggest potential compromise
+D4855,Malicious,0.88,Extremely high sender maliciousness (0.94) with high metadata suspicious score (0.86) and DMARC enforced combined with maximum exfiltration behavior (0.69) indicate sophisticated attack
+D4856,Warning,0.81,High sender maliciousness (0.67) with gift card request and image-only email but minimal technical threats suggest social engineering attempt
+D4857,Warning,0.82,High sender maliciousness (0.73) with meeting request and unsubscribe link but minimal technical threats and good authentication suggest social engineering attempt
+D4858,Warning,0.78,Moderate sender maliciousness (0.54) with unsubscribe link and self-signed SSL but minimal technical threats suggest potential compromise
+D4859,Warning,0.80,High sender maliciousness (0.59) with sender spoof detected and network call on open but minimal technical threats suggest potential compromise
+D4860,Malicious,0.84,Low sender maliciousness (0.04) with executable attachment and high spam score (0.53) combined with expired SSL certificate indicate malware delivery
+D4861,Malicious,0.83,High sender maliciousness (0.59) with VPN/MFA reset request and reply path known malicious indicate confirmed credential harvesting attack
+D4862,Warning,0.80,Extremely high sender maliciousness (0.84) with high script detection (0.41) and expired SSL certificate but minimal technical threats suggest potential compromise
+D4863,Malicious,0.85,High sender maliciousness (0.80) with meeting request and very high site visual similarity (0.97) combined with self-signed SSL indicate malicious meeting invitation
+D4864,Warning,0.79,Moderate sender maliciousness (0.43) with bank detail update request and very high ActiveX detection (0.91) but minimal technical threats suggest potential BEC attempt
+D4865,Warning,0.76,Low sender maliciousness (0.05) with invoice verification request and self-signed SSL but minimal technical threats suggest potential invoice fraud
+D4866,Warning,0.81,High sender maliciousness (0.71) with URL shortener detected and expired SSL certificate but minimal technical threats suggest potential compromise
+D4867,Warning,0.82,Extremely high sender maliciousness (0.81) with bank detail update request and high script detection (0.60) but minimal technical threats suggest potential BEC attempt
+D4868,Malicious,0.83,Moderate sender maliciousness (0.34) with gift card request and executable attachment indicate malware delivery
+D4869,Malicious,0.84,Very low sender maliciousness (0.03) with reply path known malicious and high metadata suspicious score (0.63) combined with maximum exfiltration behavior (0.77) indicate confirmed evasive malware
+D4870,Malicious,0.84,High sender maliciousness (0.66) with 2 YARA matches and very high temporary email likelihood (0.14) combined with high behavioral sandbox score (0.32) and exfiltration behavior (0.48) indicate confirmed malware activity
+D4871,Warning,0.78,Moderate sender maliciousness (0.17) with reply path known malicious and high script detection (0.73) but minimal technical threats suggest potential compromise
+D4872,Warning,0.76,Low sender maliciousness (0.09) with urgent callback request and very high temporary email likelihood (0.11) but minimal technical threats suggest vishing attempt
+D4873,Warning,0.81,High sender maliciousness (0.72) with return path mismatch and high script detection (0.87) but minimal technical threats suggest potential compromise
+D4874,Malicious,0.87,Moderate sender maliciousness (0.37) with high behavioral sandbox score (0.74) and embedded files combined with maximum exfiltration behavior (0.72) indicate data theft malware
+D4875,Warning,0.79,Extremely high sender maliciousness (0.80) with high script detection (0.05) but minimal technical threats suggest potential compromise
+D4876,Warning,0.82,Extremely high sender maliciousness (0.91) with high script detection (0.79) but minimal technical threats suggest potential compromise
+D4877,Warning,0.81,Extremely high sender maliciousness (0.89) with gift card request and reply path known malicious combined with very high ActiveX detection (0.93) suggest social engineering attempt
+D4878,Warning,0.77,Moderate sender maliciousness (0.30) with bank detail update request and reply path known malicious but minimal technical threats suggest potential BEC attempt
+D4879,Warning,0.78,High sender maliciousness (0.68) with reply path known malicious but minimal technical threats suggest potential compromise
+D4880,Malicious,0.86,Moderate sender maliciousness (0.57) with high behavioral sandbox score (0.18) and embedded files combined with maximum exfiltration behavior (0.97) indicate data theft malware
+D4881,Malicious,0.85,Moderate sender maliciousness (0.16) with high behavioral sandbox score (0.04) and embedded files combined with maximum exfiltration behavior (0.92) indicate evasive data theft malware
+D4882,Malicious,0.87,Extremely high sender maliciousness (0.93) with high metadata suspicious score (0.26) and exfiltration behavior (0.63) combined with SSL certificate mismatch indicate confirmed malicious activity

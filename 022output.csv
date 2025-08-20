@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4483,No Action,0.65,Low sender maliciousness (0.24) with good sender domain reputation (0.59) and no malicious attachments or exploits despite minor authentication issues indicate legitimate traffic
+D4484,Malicious,0.89,High sender maliciousness (0.87) with gift card request and scripts/ActiveX detection combined with DMARC failures indicate sophisticated gift card scam attack
+D4485,Warning,0.82,Moderate sender risk with wire transfer request and embedded files but DMARC enforcement and legitimate authentication suggest potential business email compromise attempt
+D4486,Malicious,0.93,Very high sender maliciousness (0.85) with document download request and maximum metadata suspicious score combined with return path mismatch indicate malware delivery
+D4487,Malicious,0.85,Extremely high sender maliciousness (0.94) with scripts/ActiveX detection and image-only email attempting to evade text-based detection indicate sophisticated phishing attack
+D4488,Malicious,0.91,High sender maliciousness (0.88) with sensitive data request and expired SSL certificate combined with ActiveX detection indicate credential harvesting attack
+D4489,Warning,0.85,High sender maliciousness (0.72) with meeting request and multiple authentication failures but no active malware indicate sophisticated social engineering attempt
+D4490,Warning,0.73,Low sender maliciousness but high script and ActiveX detection with behavioral scores suggest potential evasive threat requiring investigation
+D4491,No Action,0.58,Very low sender maliciousness (0.14) with legitimate authentication and minimal threat indicators despite some script detection suggest false positive
+D4492,Spam,0.76,High sender maliciousness (0.83) with legal threat request but primarily spam indicators and no malicious attachments suggest intimidation spam
+D4493,Warning,0.74,Moderate sender risk with link click request and high return path mismatch but minimal technical threats suggest phishing attempt
+D4494,Malicious,0.88,Moderate sender risk but bank detail update request with domain known malicious and authentication failures indicate financial fraud attempt
+D4495,Warning,0.81,Moderate risk with VPN/MFA reset request and behavioral sandbox scores combined with temporary email likelihood suggest credential theft attempt
+D4496,Malicious,0.90,Extremely high sender maliciousness (0.95) with self-signed SSL and very high SMTP IP reputation issues indicate sophisticated attack infrastructure
+D4497,Malicious,0.94,Very high sender maliciousness (0.91) with legal threat request and extremely high sender domain reputation combined with YARA matches indicate advanced threat
+D4498,Warning,0.79,Moderate sender risk with link click request and temporary email likelihood but minimal malicious indicators suggest targeted phishing
+D4499,Warning,0.80,Moderate sender risk with bank detail update request and high sender domain reputation (0.74) but authentication failures suggest business email compromise attempt
+D4500,Warning,0.83,Moderate risk with VPN/MFA reset request and high script detection combined with behavioral scores indicate credential harvesting attempt
+D4501,Spam,0.68,Low sender maliciousness with bank detail update request and temporary email but minimal technical threats suggest financial spam
+D4502,Warning,0.86,High sender maliciousness (0.71) with VPN/MFA reset request and high script/ActiveX detection indicate sophisticated credential theft attempt
+D4503,Warning,0.80,High sender maliciousness (0.75) with moderate behavioral scores but no specific malicious request reduce immediate threat level
+D4504,Malicious,0.92,Very high sender maliciousness (0.91) with reply path known malicious and authentication failures across all protocols indicate sophisticated spoofing attack
+D4505,Malicious,0.89,Extremely high sender maliciousness (0.95) with legal threat request and no reverse DNS validity indicate intimidation-based attack
+D4506,Warning,0.84,Moderate to high sender risk with return path mismatch and suspicious metadata but no specific threat request suggest potential threat
+D4507,Malicious,0.87,High sender maliciousness (0.74) with very high script and ActiveX detection combined with self-signed SSL indicate malware delivery attempt
+D4508,Warning,0.75,Low sender maliciousness but invoice verification request with very high spam score (0.47) and expired SSL certificate suggest potential invoice fraud attempt
+D4509,Warning,0.82,Moderate risk with unscannable attachment and high metadata suspicious score combined with authentication failures suggest evasive malware
+D4510,Warning,0.77,Moderate sender risk with high script detection and final URL known malicious but minimal active threats suggest compromised legitimate sender
+D4511,Warning,0.75,Moderate sender risk with return path known malicious but minimal technical threats and good authentication suggest account compromise
+D4512,Warning,0.78,Moderate risk with meeting request and high temporary email likelihood combined with embedded files suggest targeted social engineering
+D4513,Malicious,0.90,High sender maliciousness (0.88) with sensitive data request and very high script/ActiveX detection indicate data theft attempt
+D4514,Malicious,0.91,High sender maliciousness (0.88) with maximum behavioral scores and script detection combined with SSL issues indicate active malware
+D4515,Spam,0.73,Moderate sender risk with domain known malicious but primarily spam indicators and minimal technical threats suggest aggressive spam
+D4516,Malicious,0.92,High sender maliciousness (0.87) with link click request and extremely high temporary email likelihood indicate sophisticated phishing attack
+D4517,Warning,0.76,Moderate sender risk with high script detection but minimal malicious indicators and good authentication suggest potential false positive
+D4518,Malicious,0.88,High sender maliciousness (0.73) with invoice payment request and 5 malicious attachments combined with spam indicators indicate malware-laden spam
+D4519,Warning,0.85,Moderate risk with maximum exfiltration behavior score and 5 IOC matches but lower sender maliciousness suggest compromised account
+D4520,Warning,0.83,High sender maliciousness (0.71) with meeting request and high script/ActiveX detection but minimal active threats suggest social engineering
+D4521,Malicious,0.93,High sender maliciousness (0.71) with invoice verification request and final URL known malicious combined with DMARC enforcement paradox indicate sophisticated attack
+D4522,No Action,0.62,Moderate sender risk but minimal threat indicators with no specific malicious request and good authentication suggest legitimate traffic
+D4523,Warning,0.79,Moderate risk with gift card request and return path known malicious but good authentication and minimal technical threats suggest scam attempt
+D4524,Warning,0.78,Sender spoof detected with moderate sender risk but minimal technical threats and good authentication suggest spoofing attempt without malware
+D4525,Malicious,0.89,Moderate sender risk with credential request and packer detected combined with high behavioral sandbox score indicate credential theft malware
+D4526,Warning,0.84,Moderate risk with unscannable attachment and DMARC enforcement but any_network_call_on_open detected suggest suspicious document
+D4527,Spam,0.69,Low sender maliciousness with meeting request and unsubscribe link present but expired SSL and minimal threats suggest marketing spam
+D4528,Warning,0.81,Low sender maliciousness but very high return path mismatch and 4 domain known malicious indicators suggest compromised infrastructure
+D4529,Warning,0.82,High sender maliciousness (0.72) with very high temporary email likelihood and script/ActiveX detection suggest targeted phishing attempt
+D4530,Spam,0.70,Low sender maliciousness with link click request and very high return path mismatch but minimal technical threats suggest phishing spam
+D4531,Malicious,0.95,High sender maliciousness (0.79) with document download request and 10 YARA matches plus 7 domain malicious indicators indicate advanced malware campaign
+D4532,Malicious,0.86,Despite low sender maliciousness very high metadata suspicious score (0.89) with ActiveX detection and maximum exfiltration behavior score indicate evasive malware

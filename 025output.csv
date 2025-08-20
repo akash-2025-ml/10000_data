@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4633,Malicious,0.90,High sender maliciousness (0.67) with maximum exfiltration behavior score (0.92) and high AMSI suspicion score (0.44) combined with authentication failures indicate active data theft malware
+D4634,Spam,0.71,Low sender maliciousness (0.09) with meeting request and expired SSL certificate but minimal technical threats suggest meeting spam campaign
+D4635,Malicious,0.89,High sender maliciousness (0.86) with high script/ActiveX detection and QR code analysis present combined with expired SSL indicate sophisticated attack
+D4636,Warning,0.82,High sender maliciousness (0.76) with high return path mismatch score (0.43) but minimal active threats suggest potential infrastructure compromise
+D4637,Warning,0.79,Moderate sender maliciousness (0.33) with link click request and high script/ActiveX detection combined with self-signed SSL suggest phishing attempt
+D4638,Malicious,0.94,Moderate sender maliciousness with document download request but 8 YARA matches and maximum behavioral sandbox score (0.80) indicate confirmed malware delivery
+D4639,Malicious,0.91,Extremely high sender maliciousness (0.91) with very high site visual similarity (0.95) and self-signed SSL indicate sophisticated brand impersonation attack
+D4640,No Action,0.63,Moderate sender maliciousness (0.35) with minimal threat indicators and good authentication despite some script detection suggest legitimate traffic
+D4641,Malicious,0.96,Extremely high sender maliciousness (0.96) with packer detected and maximum exfiltration behavior (1.0) combined with URL redirect chain indicate advanced malware campaign
+D4642,Malicious,0.92,Extremely high sender maliciousness (0.94) with gift card request and link rewritten through redirector but high sender domain reputation suggest sophisticated scam
+D4643,Malicious,0.88,Extremely high sender maliciousness (0.96) with meeting request and unsubscribe link but high spam score (0.93) indicate sophisticated targeted attack
+D4644,Malicious,0.87,Extremely high sender maliciousness (0.93) with very high temporary email likelihood (0.53) and high script detection indicate sophisticated attack
+D4645,Malicious,0.82,Despite low sender maliciousness (0.20) high AMSI suspicion score (0.18) and maximum exfiltration behavior (0.87) indicate evasive malware
+D4646,Warning,0.76,Low sender maliciousness (0.11) with high behavioral sandbox score (0.13) and behavioral scores combined with self-signed SSL suggest compromised infrastructure
+D4647,Warning,0.83,Moderate sender maliciousness (0.49) with VPN/MFA reset request and very high return path mismatch score (0.85) suggest credential harvesting attempt
+D4648,Malicious,0.88,Extremely high sender maliciousness (0.94) with very high temporary email likelihood (0.82) and 2 domains known malicious indicate sophisticated attack infrastructure
+D4649,Warning,0.79,Moderate sender maliciousness (0.32) with meeting request and high-risk role targeted but minimal technical threats suggest social engineering attempt
+D4650,Malicious,0.84,Moderate sender maliciousness (0.59) with bank detail update request and unsubscribe link combined with final URL known malicious indicate active BEC attack
+D4651,Warning,0.83,Moderate sender maliciousness (0.55) with invoice verification request and expired SSL certificate combined with high script detection suggest invoice fraud
+D4652,No Action,0.61,Low sender maliciousness (0.20) with minimal threat indicators and good authentication despite some script detection suggest legitimate traffic
+D4653,Warning,0.80,Moderate sender maliciousness (0.47) with bank detail update request and very high URL reputation score (0.87) suggest potential financial fraud
+D4654,Malicious,0.93,Despite very low sender maliciousness high metadata suspicious score (0.87) with 2 malicious attachments and maximum exfiltration behavior indicate evasive malware
+D4655,Malicious,0.89,Moderate sender maliciousness (0.39) with high metadata suspicious score (0.53) and maximum exfiltration behavior (0.92) indicate active data theft malware
+D4656,Warning,0.84,Moderate sender maliciousness (0.52) with high metadata suspicious score (0.39) and high script detection combined with behavioral scores suggest evasive threat
+D4657,Spam,0.68,Very low sender maliciousness (0.05) with very high temporary email likelihood (0.41) but minimal technical threats suggest bulk spam campaign
+D4658,Warning,0.78,Moderate sender maliciousness (0.37) with urgent callback request and unsubscribe link combined with self-signed SSL suggest vishing attempt
+D4659,No Action,0.65,Low sender maliciousness (0.21) with high sender domain reputation (0.48) and minimal threat indicators suggest legitimate traffic
+D4660,Warning,0.82,Moderate sender maliciousness (0.41) with return path known malicious and high metadata suspicious score (0.19) suggest potential compromise
+D4661,Malicious,0.85,Extremely high sender maliciousness (0.94) with high script detection indicate sophisticated malicious attack
+D4662,Malicious,0.86,Extremely high sender maliciousness (0.95) with high script detection indicate compromised account being used maliciously
+D4663,Spam,0.69,Low sender maliciousness (0.15) with gift card request and high sender domain reputation (0.70) suggest commercial scam campaign
+D4664,Warning,0.78,Low sender maliciousness (0.25) with bank detail update request and return path known malicious combined with unsubscribe link suggest BEC attempt
+D4665,No Action,0.59,Very low sender maliciousness (0.03) with unsubscribe link and minimal threat indicators suggest legitimate marketing traffic
+D4666,Malicious,0.88,Despite low sender maliciousness very high AMSI suspicion score (0.63) and maximum exfiltration behavior (0.91) indicate sophisticated evasive malware
+D4667,Malicious,0.89,Moderate sender maliciousness (0.60) with high metadata suspicious score (0.39) and maximum exfiltration behavior (0.62) combined with QR code analysis indicate advanced malware
+D4668,Malicious,0.85,Moderate sender maliciousness (0.42) with exploit pattern detected and very high AMSI suspicion score (0.59) indicate confirmed malware activity
+D4669,Malicious,0.90,Despite low sender maliciousness wire transfer request with high behavioral sandbox score (0.45) and maximum exfiltration behavior (0.95) indicate BEC malware attack
+D4670,Malicious,0.89,Extremely high sender maliciousness (0.96) with invoice verification request and image-only email combined with self-signed SSL indicate sophisticated phishing attack
+D4671,Malicious,0.91,High sender maliciousness (0.78) with wire transfer request and very high temporary email likelihood (0.58) combined with maximum exfiltration behavior (0.86) indicate financial fraud malware
+D4672,Warning,0.83,High sender maliciousness (0.66) with invoice payment request and high script/ActiveX detection suggest potential invoice fraud
+D4673,Malicious,0.87,Moderate sender maliciousness (0.51) with urgent callback request and 1 YARA match combined with domain known malicious indicate confirmed malware threat
+D4674,Warning,0.87,High sender maliciousness (0.77) with VPN/MFA reset request and 1 IOC count combined with very high temporary email likelihood suggest credential harvesting
+D4675,Warning,0.79,Moderate sender maliciousness (0.50) with DMARC enforcement but very high temporary email likelihood (0.34) and image-only email suggest evasion attempt
+D4676,Warning,0.82,Moderate sender maliciousness (0.46) with high script detection and very high AMSI suspicion score (0.31) combined with self-signed SSL suggest potential threat
+D4677,Malicious,0.92,Extremely high sender maliciousness (0.93) with reply path known malicious and domain known malicious combined with expired SSL indicate sophisticated attack infrastructure
+D4678,Malicious,0.88,Extremely high sender maliciousness (0.94) with legal threat request and high script detection combined with URL redirect chain indicate malicious intimidation attack
+D4679,No Action,0.60,Low sender maliciousness (0.09) with document download request but minimal threat indicators and good authentication suggest legitimate business
+D4680,Malicious,0.91,High sender maliciousness (0.70) with sender spoof detected and gift card request combined with URL shortener detected indicate sophisticated malicious scam
+D4681,Malicious,0.88,Extremely high sender maliciousness (0.91) with high behavioral sandbox score (0.43) and SSL certificate mismatch indicate active evasive malware
+D4682,Warning,0.82,Low sender maliciousness (0.28) with urgent callback request and reply path known malicious combined with very high site visual similarity suggest targeted scam

@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D4433,Warning,0.85,High sender maliciousness score (0.95) and SPF failure with potentially malicious macros and scripts present indicate significant risk but no active malicious attachments or exploit patterns detected
+D4434,Warning,0.75,Moderate sender maliciousness (0.53) with SPF/DKIM failures and suspicious macros present but low spam score and no malicious attachments warrant caution rather than blocking
+D4435,Spam,0.80,Low sender reputation with SPF failure and marketing-related meeting request type combined with minimal threat indicators suggest commercial spam rather than malicious content
+D4436,Malicious,0.90,Very high sender maliciousness (0.86) with bank detail update request and return path mismatch indicates likely Business Email Compromise attempt targeting financial fraud
+D4437,Malicious,0.95,Extremely high sender maliciousness (0.91) with spoofed temporary email sender and invoice verification request combined with DMARC failures indicate sophisticated phishing attack
+D4438,Warning,0.70,Moderate sender maliciousness with high return path mismatch score and SPF failures suggest potential spoofing but no specific malicious request type reduces immediate threat
+D4439,Warning,0.80,Moderate to high sender maliciousness with bank detail update request and executable attachments absent but concerning SPF pass suggests sophisticated social engineering
+D4440,Spam,0.75,Low sender maliciousness but suspicious gift card request with moderately high behavioral scores and embedded files indicate potential scam rather than direct malware
+D4441,Malicious,0.98,Extremely high sender maliciousness (0.93) with packer-detected obfuscated attachment and network call attempts combined with exploit patterns indicate active malware delivery
+D4442,Malicious,0.92,High sender maliciousness with return path known malicious and maximum behavioral sandbox score (0.87) with embedded files indicate sophisticated malware campaign
+D4443,Warning,0.65,Moderate sender risk with SSL issues and high script detection but no urgent request type or malicious attachments reduce immediate threat level
+D4444,Spam,0.70,Low to moderate sender risk with urgent callback request and SPF failure but minimal attachment threats suggest social engineering spam attempt
+D4445,No Action,0.60,Low sender maliciousness with legitimate infrastructure despite some authentication failures and no specific threat request type indicate likely legitimate traffic
+D4446,Warning,0.85,Moderate sender risk but with multiple embedded files and high sandbox execution time combined with visual similarity to known brands suggest potential phishing
+D4447,Malicious,0.88,High sender maliciousness (0.73) with very high script and ActiveX detection combined with multiple malicious URL indicators point to drive-by download attack
+D4448,Spam,0.72,Moderate sender risk with domain known malicious flag but primarily marketing indicators and no attachment threats suggest aggressive spam campaign
+D4449,Warning,0.78,Moderate risk with gift card request and high bulk message indicators combined with reply path issues suggest targeted scam attempt requiring caution
+D4450,Spam,0.68,Low sender maliciousness with bank detail update request but high bulk and spam indicators with minimal technical threats suggest spam campaign
+D4451,Malicious,0.94,Extremely high sender maliciousness (0.94) with return path mismatch near certainty and multiple authentication failures indicate sophisticated spoofing attack
+D4452,Malicious,0.91,Very high sender maliciousness (0.87) with high behavioral sandbox scores and embedded file threats combined with TLS downgrade attacks indicate malware campaign
+D4453,Warning,0.82,Moderate to high sender risk with suspicious sandbox behaviors and authentication failures but no specific malicious request reduce immediate threat
+D4454,Malicious,0.89,High sender maliciousness (0.75) with maximum behavioral and exfiltration scores combined with SSL issues indicate data theft malware attempt
+D4455,Malicious,0.96,High risk wire transfer request with maximum exfiltration behavior score (0.95) and multiple embedded files indicate targeted financial fraud attack
+D4456,Warning,0.77,Moderate sender risk with invoice verification request and high script detection but lower technical threat scores suggest potential business email compromise
+D4457,Malicious,0.93,Wire transfer request with executable attachment and very high AMSI suspicion score (0.92) combined with authentication failures indicate active fraud attempt
+D4458,Warning,0.83,Invoice payment request with high behavioral scores and SSL validity issues but moderate sender risk suggest sophisticated but not immediately dangerous threat
+D4459,Warning,0.79,Urgent callback request with moderate behavioral threats and expired SSL certificate indicate potential vishing or callback scam attempt
+D4460,Warning,0.74,VPN/MFA reset request with packer detected and moderate sandbox scores suggest potential credential harvesting attempt requiring immediate attention
+D4461,Warning,0.81,High sender maliciousness (0.82) with self-signed SSL and authentication issues but no specific malicious request type reduce immediate exploitation risk
+D4462,Warning,0.86,Moderate sender risk with high script and ActiveX detection combined with authentication failures across all protocols suggest sophisticated evasion attempt
+D4463,Malicious,0.97,Extremely high sender maliciousness (0.91) with multiple YARA matches and maximum exfiltration scores indicate active advanced persistent threat
+D4464,Spam,0.73,High sender maliciousness but legal threat request with bulk indicators and no technical threats suggest intimidation spam rather than malware
+D4465,Spam,0.69,Document download request with moderate sender risk but primarily spam indicators and minimal attachment threats suggest phishing spam
+D4466,Spam,0.71,Gift card request with moderate behavioral scores but high spam likelihood and minimal technical threats indicate scam spam campaign
+D4467,Malicious,0.90,Executable attachment with domain known malicious and high script detection combined with marketing bypass attempts indicate trojanized spam
+D4468,Malicious,0.92,Urgent callback with very high spam score (0.96) and SSL validity issues combined with redirect chains indicate sophisticated vishing attack
+D4469,Warning,0.84,High script and ActiveX detection with image-only email attempting to evade detection but moderate sender risk reduce immediate threat
+D4470,Spam,0.76,Link click request with temporary email sender likelihood (0.94) and return path mismatch but minimal technical threats suggest phishing spam
+D4471,Spam,0.66,Very low sender maliciousness with executable attachment but minimal behavioral threats and legitimate authentication suggest false positive risk
+D4472,Warning,0.87,Wire transfer request with return path known malicious and moderate script detection indicate business email compromise attempt
+D4473,No Action,0.55,Low sender maliciousness with DMARC enforcement and legitimate wire transfer request despite some authentication suggest legitimate business communication
+D4474,Malicious,0.95,High sender maliciousness (0.86) with unscannable attachments and maximum YARA matches combined with gift card request indicate sophisticated malware
+D4475,Warning,0.88,Packer detected with DMARC enforcement paradox and high behavioral scores suggest advanced evasion technique requiring investigation
+D4476,Malicious,0.94,Very high sender maliciousness (0.88) with maximum AMSI score and exfiltration behaviors indicate active data-stealing malware
+D4477,No Action,0.58,Low sender maliciousness with invoice verification but good authentication and minimal threats suggest legitimate business process
+D4478,Malicious,0.96,High sender maliciousness (0.82) with maximum sandbox and AMSI scores combined with suspicious entropy indicate polymorphic malware
+D4479,Malicious,0.93,High sender maliciousness with packer detected and YARA match combined with maximum SSL validity issues indicate trojan delivery
+D4480,Spam,0.74,Wire transfer request with moderate sender risk but primarily spam indicators and minimal technical threats suggest financial spam
+D4481,Warning,0.85,High script detection with authentication failures across all protocols but moderate sender risk suggest evasive phishing attempt
+D4482,No Action,0.62,Low sender maliciousness (0.16) with minimal threat indicators despite some authentication issues suggest likely legitimate traffic

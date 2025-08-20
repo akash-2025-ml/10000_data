@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D5233,Malicious,0.94,Gift card request with very high sender maliciousness (0.94) and high URL rendering behavior (0.79). Gift card fraud from confirmed malicious sender requires immediate blocking.
+D5234,Spam,0.82,Wire transfer request with high spam content (0.51) and unsubscribe link present. Low sender maliciousness (0.12) suggests bulk spam rather than targeted fraud.
+D5235,Malicious,0.91,Document download with very high sender maliciousness (0.89) and high exfiltration behavior (0.73). High VIP similarity (0.90) confirms executive impersonation for malware delivery.
+D5236,Malicious,0.93,Very high sender maliciousness (0.94) with return path mismatch and high SMTP IP reputation score (0.97). Confirmed malicious actor requiring immediate blocking.
+D5237,Warning,0.77,Sensitive data request with low sender maliciousness (0.24) but DMARC enforced and high VIP similarity (0.48). Data requests require verification despite mixed signals.
+D5238,Warning,0.81,Meeting request with moderate sender maliciousness (0.44) and high metadata suspicious score (0.81). High AMSI score (0.67) and reply path known malicious require verification.
+D5239,Warning,0.76,YARA rule matches (5) with certificate mismatch but very low sender maliciousness (0.03). Domain known malicious but low sender score requires verification.
+D5240,Malicious,0.88,High sender maliciousness (0.81) with return path mismatch and self-signed SSL certificate. High SMTP IP reputation score (0.70) confirms malicious actor.
+D5241,Malicious,0.87,Legal threat with high sender maliciousness (0.51) and unscannable attachment. Revoked SSL certificate with high URL rendering behavior (0.84) confirms attack.
+D5242,Malicious,0.86,Link click request with high sender maliciousness (0.68) and high exfiltration behavior (0.63). High site visual similarity (0.64) confirms phishing attack.
+D5243,Warning,0.76,Bank detail update request with low sender maliciousness (0.15) but high VIP similarity (0.62). Banking requests with authentication anomalies require verification.
+D5244,Malicious,0.88,VPN/MFA reset request with high sender maliciousness (0.54) and very high metadata suspicious score (0.90). High script presence (0.81) confirms security bypass attack.
+D5245,Warning,0.79,High temporary email likelihood (0.84) with URL count (3) but moderate sender maliciousness (0.33). Multiple threat indicators require verification.
+D5246,Warning,0.80,Legal threat with low sender maliciousness (0.28) but high metadata suspicious score (0.53) and URL shortener detected. Legal threats require verification.
+D5247,Malicious,0.92,Link click request with very high sender maliciousness (0.90) and extreme URL rendering behavior (0.97). Failed SPF/DKIM confirms malicious link campaign.
+D5248,Malicious,0.83,Bank detail update request with failed DMARC and self-signed SSL certificate. Link rewritten through redirector confirms banking fraud with spoofing.
+D5249,Malicious,0.86,VPN/MFA reset request with high sender maliciousness (0.62) and high exfiltration behavior (0.84). Failed SPF authentication confirms security bypass attempt.
+D5250,Spam,0.80,Bank detail update request with user marked as spam and low sender maliciousness (0.24). Failed authentication with spam indicators suggests bulk campaign rather than targeted fraud.
+D5251,Malicious,0.90,VPN/MFA reset request with high sender maliciousness (0.71) and malicious attachment count (1). Self-signed SSL with extreme site visual similarity (0.95) confirms attack.
+D5252,Warning,0.81,High AMSI score (0.66) and high exfiltration behavior (0.71) but moderate sender maliciousness (0.42). Technical indicators require verification.
+D5253,Malicious,0.91,Very high sender maliciousness (0.93) with high metadata suspicious score (0.53) and unsubscribe link present. Confirmed malicious actor requiring immediate blocking.
+D5254,Warning,0.78,Legal threat with moderate sender maliciousness (0.34) and self-signed SSL certificate. High SMTP IP reputation score (0.87) requires verification.
+D5255,Warning,0.79,Exploit pattern detected with embedded files but moderate sender maliciousness (0.30). High behavioral sandbox score (0.21) requires verification.
+D5256,Malicious,0.85,High sender maliciousness (0.68) with URL count (3) and expired SSL certificate. URL shortener detected confirms malicious infrastructure.
+D5257,Malicious,0.87,Invoice verification with high sender maliciousness (0.74) and high VIP similarity (0.96). Invoice fraud with executive impersonation requires blocking.
+D5258,Malicious,0.90,High sender maliciousness (0.78) with very high metadata suspicious score (0.93) and extreme site visual similarity (0.96). High behavioral sandbox score (0.58) confirms malware.
+D5259,Malicious,0.88,High sender maliciousness (0.77) with high risk role targeted and reply path known malicious. Failed DMARC authentication confirms threat actor.
+D5260,Spam,0.84,High spam content (0.76) with low sender maliciousness (0.14) and certificate mismatch. Bulk messaging indicators suggest spam rather than targeted attack.
+D5261,Malicious,0.85,Meeting request with high sender maliciousness (0.69) and very high temporary email likelihood (0.99). High script presence (0.68) confirms social engineering attack.
+D5262,Warning,0.79,Sensitive data request with low sender maliciousness (0.16) but expired SSL certificate and link rewritten through redirector. Data requests require verification.
+D5263,Malicious,0.86,High sender maliciousness (0.63) with high exfiltration behavior (0.66) and URL count (2). Self-signed SSL confirms malicious infrastructure.
+D5264,Warning,0.78,High VIP similarity (0.76) with failed DMARC but moderate sender maliciousness (0.43). Executive impersonation indicators require verification.
+D5265,Warning,0.76,Link click request with expired SSL certificate but low sender maliciousness (0.13). Failed SPF authentication requires verification.
+D5266,Malicious,0.89,Very high sender maliciousness (0.84) with high behavioral sandbox score (0.25) and high VIP similarity (0.75). URL shortener detected confirms attack.
+D5267,Warning,0.82,Invoice payment with return path known malicious but moderate sender maliciousness (0.46). Failed authentication with invoice requests requires verification.
+D5268,Malicious,0.86,High sender maliciousness (0.56) with exploit pattern detected and high exfiltration behavior (0.84). Confirmed malicious actor with data theft capability.
+D5269,Warning,0.78,Meeting request with URL count (2) and self-signed SSL but moderate sender maliciousness (0.33). Meeting requests require verification.
+D5270,Malicious,0.87,Invoice verification with high sender maliciousness (0.76) and high domain reputation (0.55). High VIP similarity (0.31) confirms invoice fraud with impersonation.
+D5271,Malicious,0.91,Very high sender maliciousness (0.89) with DMARC enforced and reply path known malicious. Failed DKIM/DMARC confirms spoofing from malicious actor.
+D5272,Malicious,0.88,Gift card request with high sender maliciousness (0.54) and extreme exfiltration behavior (0.95). High spam content (0.51) confirms gift card scam.
+D5273,No Action,0.83,Very low sender maliciousness (0.03) with high domain reputation (0.32) and passed SPF authentication. Despite script presence, legitimate authentication suggests normal communication.
+D5274,Warning,0.80,Credential request with DMARC enforced and high exfiltration behavior (0.75) but moderate sender maliciousness (0.33). Credential requests require verification.
+D5275,Warning,0.77,High temporary email likelihood (0.36) with self-signed SSL and high exfiltration behavior (0.60). Mixed authentication signals require verification.
+D5276,Warning,0.78,Meeting request with failed SPF/DKIM and self-signed SSL certificate but moderate sender maliciousness (0.41). Meeting requests require verification.
+D5277,Malicious,0.89,Very high sender maliciousness (0.83) with unscannable attachment and very high temporary email likelihood (0.92). High AMSI score (0.88) confirms malware delivery.
+D5278,Malicious,0.84,High sender maliciousness (0.50) with high SMTP IP reputation score (0.80) and high script presence (0.57). User marked as spam confirms threat.
+D5279,Warning,0.77,Link click request with high domain reputation (0.56) but failed DMARC authentication. URL count (4) requires verification.
+D5280,Warning,0.79,Document download with moderate sender maliciousness (0.50) and high domain reputation (0.20). Failed SPF authentication requires verification.
+D5281,Warning,0.80,Certificate mismatch with high exfiltration behavior (0.94) but low sender maliciousness (0.20). Link rewritten through redirector requires verification.
+D5282,Malicious,0.87,High sender maliciousness (0.78) with DMARC enforced and reply path known malicious. Failed SPF/DKIM/DMARC confirms spoofing from malicious actor.

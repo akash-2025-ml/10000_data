@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D5183,Warning,0.78,Low sender maliciousness (0.21) with high domain reputation (0.93) but failed DMARC authentication. High site visual similarity (0.64) suggests potential brand impersonation requiring verification.
+D5184,Warning,0.75,Meeting request with low sender maliciousness (0.20) but high VIP similarity (0.75). Failed SPF authentication and moderate threat indicators require verification before engagement.
+D5185,Malicious,0.84,Bank detail update request with failed SPF/DKIM authentication and high VIP similarity (0.64). Banking fraud requests require malicious classification regardless of sender score.
+D5186,Malicious,0.91,Invoice verification with high sender maliciousness (0.82) and final URL known malicious. High script presence (0.81) confirms invoice fraud with confirmed threat destination.
+D5187,Malicious,0.86,High sender maliciousness (0.50) with final URL known malicious and self-signed SSL certificate. Failed DKIM authentication confirms malicious actor requiring immediate blocking.
+D5188,Malicious,0.83,Bank detail update request with failed SPF authentication and self-signed SSL certificate. Banking fraud with authentication failures requires immediate blocking.
+D5189,Malicious,0.88,Gift card request with high sender maliciousness (0.64) and high metadata suspicious score (0.77). High exfiltration behavior (0.62) confirms gift card scam with malware delivery.
+D5190,Malicious,0.89,High sender maliciousness (0.65) with return path mismatch and very high metadata suspicious score (0.93). Extreme exfiltration behavior (0.88) confirms malware with data theft capability.
+D5191,Malicious,0.87,High sender maliciousness (0.71) with exploit pattern detected and unscannable attachment. High metadata suspicious score (0.79) confirms evasive malware delivery requiring immediate blocking.
+D5192,Malicious,0.84,High sender maliciousness (0.58) with expired SSL certificate and high site visual similarity (0.94). High script presence confirms malicious actor despite mixed signals.
+D5193,Warning,0.76,Urgent callback request with moderate sender maliciousness (0.33) and failed DMARC authentication. Callback requests with authentication failures require verification.
+D5194,Malicious,0.93,Very high sender maliciousness (0.96) with revoked SSL certificate and high script presence (0.94). Failed DKIM/DMARC confirms spoofing from confirmed malicious actor.
+D5195,Warning,0.79,High sender maliciousness (0.30) with high script presence (0.95) but low specific threat indicators. Embedded files with valid SSL require verification.
+D5196,Malicious,0.91,Very high sender maliciousness (0.83) with high script presence (0.89) and site visual similarity (0.69). Confirmed malicious actor requiring immediate blocking.
+D5197,Warning,0.78,DMARC enforced with low sender maliciousness (0.18) but failed SPF/DKIM authentication. High script presence (0.90) requires verification despite legitimate indicators.
+D5198,Malicious,0.92,Gift card request with very high sender maliciousness (0.95) and high domain reputation (0.72). Gift card fraud from confirmed malicious sender requires immediate blocking.
+D5199,Malicious,0.82,Bank detail update request with failed SPF/DKIM authentication. Banking fraud with spoofing indicators requires immediate blocking.
+D5200,Malicious,0.87,High sender maliciousness (0.80) with failed SPF/DKIM and high spam content (0.75). Confirmed malicious actor with authentication failures requires blocking.
+D5201,Malicious,0.84,High sender maliciousness (0.52) with malicious attachment count (1) and high exfiltration behavior (0.25). Confirmed malware delivery with data theft capability.
+D5202,Warning,0.81,Packer detected with moderate sender maliciousness (0.33) and high AMSI score (0.68). High exfiltration behavior (0.79) but mixed signals require verification.
+D5203,Warning,0.80,High metadata suspicious score (0.93) with high exfiltration behavior (0.52) but low sender maliciousness (0.10). Technical indicators suggest caution but require verification.
+D5204,Malicious,0.89,Wire transfer request with expired SSL certificate and extreme exfiltration behavior (0.95). Wire transfer fraud with data theft capability requires immediate blocking.
+D5205,Malicious,0.85,Invoice verification with high sender maliciousness (0.53) and high VIP similarity (0.60). Invoice fraud with executive impersonation requires immediate blocking.
+D5206,Malicious,0.87,Wire transfer request with YARA rule matches (1) and high exfiltration behavior (0.91). Wire transfer fraud with malware indicators requires immediate blocking.
+D5207,Malicious,0.89,Invoice payment with high sender maliciousness (0.83) and packer detected. IOC count (5) and extreme exfiltration behavior (0.99) confirm malware delivery with invoice fraud.
+D5208,Malicious,0.90,Urgent callback with high sender maliciousness (0.78) and high metadata suspicious score (0.71). Reply path known malicious confirms threat actor requiring immediate blocking.
+D5209,Malicious,0.88,VPN/MFA reset request with high sender maliciousness (0.84) and failed SPF/DKIM authentication. Critical security bypass attempt with high exfiltration behavior (0.69).
+D5210,Malicious,0.87,High sender maliciousness (0.76) with high script presence (0.58) and very high SMTP IP reputation score (0.98). Confirmed malicious actor requiring immediate blocking.
+D5211,Warning,0.79,High behavioral sandbox score (0.65) with reply path known malicious but low sender maliciousness (0.05). High exfiltration behavior (0.80) requires verification.
+D5212,Malicious,0.86,High sender maliciousness (0.57) with DMARC enforced and high metadata suspicious score (0.59). High script presence (0.78) confirms malicious actor requiring blocking.
+D5213,Warning,0.76,Legal threat with low sender maliciousness (0.22) but failed all authentication checks. Legal threats with authentication failures require verification.
+D5214,Warning,0.78,Document download request with moderate sender maliciousness (0.43) and YARA rule matches (7). High script presence (0.95) requires verification.
+D5215,Malicious,0.87,Gift card request with high sender maliciousness (0.71) and YARA rule matches (7). Final URL known malicious confirms gift card scam with malicious destination.
+D5216,Warning,0.79,High metadata suspicious score (0.74) with certificate mismatch but moderate sender maliciousness (0.32). Failed DKIM/DMARC requires verification.
+D5217,Warning,0.80,Urgent callback with return path mismatch and reply path known malicious. Failed SPF but moderate sender score requires verification.
+D5218,Warning,0.78,YARA rule matches (3) with high exfiltration behavior (0.85) but moderate sender maliciousness (0.43). Technical indicators require verification.
+D5219,Malicious,0.89,Link click request with very high sender maliciousness (0.85) and high script presence (0.94). Failed DKIM authentication confirms malicious link campaign.
+D5220,Malicious,0.87,High sender maliciousness (0.81) with YARA rule matches (1) and high URL reputation score (0.69). Failed SPF authentication confirms threat requiring blocking.
+D5221,Malicious,0.84,Wire transfer request with unscannable attachment and expired SSL certificate. Wire transfer fraud with evasion techniques requires immediate blocking.
+D5222,Malicious,0.82,Wire transfer request with failed SPF/DKIM/permerror DMARC authentication. Wire transfer fraud with spoofing indicators requires immediate blocking.
+D5223,Malicious,0.85,Gift card request with YARA rule matches (6) and high exfiltration behavior (0.81). Gift card fraud requires malicious classification regardless of sender score.
+D5224,Malicious,0.90,Very high sender maliciousness (0.83) with high metadata suspicious score (0.47) and site visual similarity (0.65). Failed SPF authentication confirms malicious actor.
+D5225,Warning,0.77,IOC count (2) with embedded files but moderate sender maliciousness (0.36). Failed SPF authentication requires verification.
+D5226,Malicious,0.86,Invoice verification with high sender maliciousness (0.72) and failed SPF authentication. Invoice fraud from confirmed malicious sender requires blocking.
+D5227,Malicious,0.88,High sender maliciousness (0.76) with network call on open behavior and reply path known malicious. High script presence (0.80) confirms malicious actor.
+D5228,Malicious,0.87,High sender maliciousness (0.77) with YARA rule matches (2) and high exfiltration behavior (0.77). Failed DKIM/DMARC confirms spoofing from malicious actor.
+D5229,Malicious,0.84,Wire transfer request with high sender maliciousness (0.59) and high domain reputation (0.87). Failed DMARC authentication confirms wire transfer fraud despite reputation.
+D5230,Malicious,0.85,High sender maliciousness (0.66) with failed SPF authentication and high script presence (0.78). Site visual similarity (0.22) confirms brand impersonation attack.
+D5231,Warning,0.76,Low sender maliciousness (0.17) with failed SPF authentication and certificate mismatch. Mixed signals require verification before trust.
+D5232,Warning,0.75,Very low sender maliciousness (0.13) with certificate mismatch but passed DKIM/DMARC. Mixed authentication signals require verification.

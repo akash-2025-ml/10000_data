@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D5083,Warning,0.78,High temporary email likelihood (0.68) with reply path diff from sender and high exfiltration behavior (0.53). Failed SPF/DKIM with valid SSL. No specific request but AMSI score (0.20) suggests potential script threats requiring caution.
+D5084,No Action,0.82,Moderate sender maliciousness (0.54) with legitimate profile. Passed SPF with valid SSL and minimal threat indicators. High site visual similarity (0.15) likely indicates legitimate branding. No malicious behaviors detected.
+D5085,Warning,0.76,Moderate sender maliciousness (0.63) with high temporary email likelihood (0.44) and self-signed SSL certificate. Passed SPF but concerning ActiveX objects (0.88). Mixed signals require verification.
+D5086,Malicious,0.87,Urgent callback request with high sender maliciousness (0.75). Failed DMARC with valid SSL. High VIP similarity (0.89) indicates executive impersonation for callback scam targeting social engineering.
+D5087,No Action,0.83,Low sender maliciousness (0.09) with permerror DMARC status. Valid SSL with passed SPF and minimal threat indicators. Appears to be legitimate communication with DMARC configuration issues.
+D5088,Warning,0.80,High spam content (0.60) with failed SPF and ActiveX objects (0.79). Valid SSL but concerning script patterns and exfiltration behavior (0.49). Link rewritten through redirector requires caution.
+D5089,Spam,0.84,High spam content (0.78) with macro-enabled documents (0.92) and scripts (0.87). Valid SSL but unsubscribe link present suggests bulk marketing campaign rather than targeted attack.
+D5090,Malicious,0.87,High sender maliciousness (0.85) with temporary email likelihood (0.59) and self-signed SSL. Failed DKIM with extreme VIP similarity (0.94) indicates executive impersonation attempt requiring immediate blocking.
+D5091,Malicious,0.86,Gift card request with certificate mismatch and high VIP similarity (0.73). Failed SPF/DKIM/DMARC indicates spoofing. Gift card fraud using executive impersonation requires malicious classification.
+D5092,Malicious,0.85,Bank detail update request with moderate sender score but concerning URL reputation (0.10). Failed SPF/DKIM with URL domain known malicious. Banking fraud with malicious infrastructure confirmation.
+D5093,Malicious,0.89,Sender spoof detected with high sender maliciousness (0.72) and scripts (0.92). Failed DKIM/DMARC with final URL known malicious. Spoofing attack with confirmed malicious destination.
+D5094,Malicious,0.91,Very high sender maliciousness (0.90) with executable attachment and YARA rule matches (7). Certificate mismatch with high exfiltration behavior (0.76). Clear malware delivery with data theft capability.
+D5095,Warning,0.77,High sender maliciousness (0.71) with high domain reputation (0.87) but failed SPF. URL shortener detected with valid SSL. Mixed authentication signals require verification.
+D5096,Malicious,0.85,Domain known malicious with high metadata suspicious score (0.48) and exfiltration behavior (0.75). Embedded files with domain maliciousness flag confirms active threat requiring immediate blocking.
+D5097,Malicious,0.87,Wire transfer request with return path known malicious and high behavioral sandbox score (0.81). Failed SPF confirms spoofing. Financial fraud with confirmed malicious infrastructure.
+D5098,Malicious,0.87,Invoice verification with high sender maliciousness (0.67) and self-signed SSL certificate. Failed DKIM indicating spoofing. Invoice fraud with authentication failures confirms financial threat.
+D5099,Malicious,0.88,Wire transfer request with high temporary email likelihood (0.85) and unscannable attachment. Failed SPF/DKIM/DMARC with self-signed SSL. Wire transfer fraud with evasion techniques.
+D5100,Warning,0.76,Invoice payment request with low sender maliciousness (0.12) but high exfiltration behavior (0.89). Valid SSL with neutral SPF. Mixed signals require verification for financial request.
+D5101,Warning,0.79,Urgent callback request with high visual similarity to known brand (0.61). Failed SPF/DKIM with valid SSL. High exfiltration behavior (0.76) suggests potential threat requiring caution.
+D5102,Malicious,0.84,VPN/MFA reset request with failed SPF/DKIM and high reply path reputation issues (0.78). Critical security request with authentication failures indicates account takeover attempt.
+D5103,Malicious,0.82,Sender spoof detected regardless of domain reputation. Self-signed SSL certificate with spoofing confirmation indicates impersonation attempt requiring immediate blocking.
+D5104,Malicious,0.89,Very high sender maliciousness (0.89) with ActiveX objects (0.89) and failed SPF. High exfiltration behavior (0.59) confirms malware delivery capability requiring immediate blocking.
+D5105,Warning,0.77,High exfiltration behavior (0.87) with embedded files (3) but low sender maliciousness (0.44). Failed all authentication with valid SSL. Technical indicators suggest caution.
+D5106,Malicious,0.89,Legal threat with DMARC enforced and high VIP similarity (0.58). Failed SPF/DKIM with scripts (0.93). Legal threats with impersonation confirm social engineering attack.
+D5107,Warning,0.81,Document download request with self-signed SSL and high site visual similarity (0.88). Valid authentication but untrusted certificate with document requests requires verification.
+D5108,Malicious,0.87,Gift card request with very high sender maliciousness (0.82) and YARA rule matches (2). Valid authentication but gift card fraud with malicious sender confirmation.
+D5109,Warning,0.75,High spam content (0.29) with SMTP geo risks (0.50) but low sender maliciousness (0.08). Valid SSL and passed SPF. Mixed signals require verification.
+D5110,Warning,0.78,Urgent callback request with high temporary email likelihood (0.83). Failed SPF/DKIM with valid SSL. Callback requests with authentication failures require verification.
+D5111,Warning,0.83,DMARC enforced with very high metadata suspicious score (0.73) and AMSI score (0.49). Valid SSL but concerning behaviors with no specific request require caution.
+D5112,Warning,0.79,Link click request with high URL reputation concerns (0.72) and failed SPF/DKIM. Valid SSL with mixed signals require user verification before clicking links.
+D5113,Malicious,0.87,Extreme exfiltration behavior (0.94) indicates data theft capability regardless of sender score. Failed SPF/DKIM confirms spoofing. Malware with data exfiltration requires immediate blocking.
+D5114,Malicious,0.88,Wire transfer request with revoked SSL certificate and high sender maliciousness (0.64). Failed SPF/DKIM confirms spoofing. Wire transfer fraud with revoked certificate confirms attack.
+D5115,Malicious,0.86,Wire transfer request with high sender maliciousness (0.72) and urgency keywords. Self-signed SSL with high scripts (0.91). Wire transfer fraud with urgency tactics confirms threat.
+D5116,Malicious,0.85,Gift card request with expired SSL certificate and high exfiltration behavior (0.89). Failed SPF with high site visual similarity (0.44). Gift card scam with expired security confirmation.
+D5117,Malicious,0.88,Very high sender maliciousness (0.91) with failed SPF confirms threat regardless of return path. High sender reputation (0.91) indicates confirmed malicious actor requiring immediate blocking.
+D5118,Malicious,0.86,High sender maliciousness (0.64) with extreme URL reputation concerns (0.84). Failed SPF/DKIM with high VIP similarity (0.89) indicates executive impersonation with malicious URLs.
+D5119,Malicious,0.85,Invoice verification with high sender maliciousness (0.64) and high site visual similarity (0.62). Failed all authentication confirms spoofing. Invoice fraud with impersonation.
+D5120,No Action,0.82,Moderate sender score with high domain reputation (0.50) and passed SPF/DMARC. Valid SSL with QR code present but legitimate authentication suggests normal communication.
+D5121,No Action,0.83,Low sender maliciousness (0.05) with valid SSL and passed SPF/DMARC. High AMSI score (0.60) but legitimate authentication and image-only email suggest normal communication.
+D5122,Malicious,0.86,Wire transfer request with expired SSL certificate and high sender maliciousness (0.80). Despite valid authentication, financial fraud from malicious sender with expired certificate confirms attack requiring immediate blocking.
+D5123,Warning,0.76,High return path reputation (0.32) with high URL reputation concerns (0.71). Valid SSL but failed DMARC. Mixed signals require verification.
+D5124,Malicious,0.83,High sender maliciousness (0.70) with reply path known malicious and self-signed SSL. Reply path maliciousness flag confirms threat actor requiring immediate blocking.
+D5125,No Action,0.81,Low sender score with passed SPF/DMARC and valid SSL. High reply path reputation (0.89) suggests legitimate communication with minor configuration issues.
+D5126,Malicious,0.84,Gift card request with high temporary email likelihood (0.65) and high reply path reputation (0.79). Failed all authentication confirms spoofing. Gift card fraud requires malicious classification.
+D5127,Malicious,0.85,Wire transfer request with YARA rule matches (3) indicating known malware patterns. Wire transfer fraud with malware signatures confirms financial attack requiring immediate blocking.
+D5128,Malicious,0.92,Document download request with certificate mismatch and extreme behavioral sandbox score (0.91). Extreme exfiltration behavior (0.99) confirms malware delivery requiring immediate blocking.
+D5129,Malicious,0.82,DMARC enforced but return path known malicious confirms threat actor. Failed SPF/DKIM indicates spoofing. Malicious infrastructure override domain reputation.
+D5130,Malicious,0.89,Sensitive data request with high sender maliciousness (0.75) and high spam content (0.62). Self-signed SSL with scripts (0.88). Data harvesting attempt with technical confirmation.
+D5131,Warning,0.78,Meeting request with high metadata suspicious score (0.43) but moderate sender score. Valid SSL with failed DKIM. Meeting requests with suspicious metadata require verification.
+D5132,Malicious,0.88,Has executable attachment with high exfiltration behavior (0.83) and AMSI score (0.56). Self-signed SSL confirms untrusted source. Malware delivery with data theft capability.
