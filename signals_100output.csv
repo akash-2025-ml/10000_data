@@ -1,0 +1,102 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+W001,Warning,0.75,Moderate sender maliciousness (0.45), invoice verification request with multiple warning signals including 2 YARA matches, presence of macros and VBScript, failed authentication (SPF softfail, DKIM/DMARC fail), and suspicious behavioral patterns. While concerning, lacks definitive malicious attachments or high-severity indicators.
+W002,Warning,0.80,Multiple concerning indicators including moderate sender maliciousness (0.50), document download request, 1 IOC detected, failed authentication with expired SSL certificate, and presence of VBScript/ActiveX objects. High exfiltration behavior score (0.35) and moderate behavioral patterns warrant caution but insufficient for malicious classification.
+W003,Warning,0.70,Packer detected with moderate sender maliciousness (0.40), link click request, 3 YARA matches, presence of VBScript/ActiveX objects, self-signed SSL certificate, and URL shortener usage. Combined technical indicators suggest potential threat requiring careful scrutiny.
+W004,Warning,0.85,Wire transfer request with moderate to high sender maliciousness (0.55), 2 YARA matches, presence of macros/VBScript, failed authentication across all protocols, and moderate behavioral scores. Financial request type combined with technical red flags creates elevated risk requiring investigation.
+W005,Warning,0.75,Bank detail update request with moderate maliciousness (0.35), expired SSL certificate, multiple URLs (4), and various technical indicators. Sensitive financial request combined with infrastructure issues warrants caution despite lower threat scores.
+W006,Warning,0.80,Meeting request with moderate sender maliciousness (0.48), 1 IOC detected, presence of macros, failed authentication (DMARC temperror), and suspicious behavioral patterns. Meeting-based social engineering attempt with technical red flags.
+W007,Warning,0.75,Sensitive data request with enforced DMARC but failed authentication, presence of VBScript, self-signed SSL certificate, and moderate behavioral scores. Data harvesting attempt with mixed security indicators.
+W008,Warning,0.85,Legal threat with packer detected, moderate sender maliciousness (0.52), 3 YARA matches, presence of macros/VBScript/ActiveX, and failed authentication. Legal pressure tactics combined with multiple technical threats.
+W009,Warning,0.80,VPN/MFA reset request with moderate maliciousness (0.38), 2 YARA matches, presence of macros/ActiveX, expired SSL certificate, and authentication system targeting. Critical security infrastructure targeting attempt.
+W010,Warning,0.70,Credential request with moderate maliciousness (0.46), 1 IOC detected, presence of VBScript, and mixed authentication results. Account compromise attempt with moderate technical indicators.
+W011,Warning,0.75,Invoice payment request with enforced DMARC but failed authentication, 2 YARA matches, presence of macros/ActiveX, self-signed SSL certificate, and URL shortener usage. Financial fraud preparation with technical evasion.
+W012,Warning,0.80,Gift card request with packer detected, moderate maliciousness (0.49), 1 IOC detected, presence of VBScript, failed authentication, and behavioral concerns. Common scam vector with technical sophistication.
+W013,Warning,0.75,Document download request with moderate maliciousness (0.41), 3 YARA matches, presence of macros/VBScript/ActiveX, expired SSL certificate, and malware delivery indicators.
+W014,Warning,0.80,Bank detail update request with moderate sender maliciousness (0.53), 2 YARA matches, presence of macros, failed authentication, self-signed SSL certificate, and financial targeting.
+W015,Warning,0.70,Meeting request with enforced DMARC but failed authentication, moderate maliciousness (0.37), presence of ActiveX, expired SSL certificate, and social engineering indicators.
+W016,Warning,0.85,Sensitive data request with packer detected, moderate maliciousness (0.47), 2 IOCs detected, presence of macros/VBScript, expired SSL certificate, and data harvesting attempt.
+W017,Warning,0.75,Legal threat with moderate maliciousness (0.43), presence of VBScript/ActiveX, self-signed SSL certificate, and pressure tactics with technical indicators.
+W018,Warning,0.80,VPN/MFA reset request with enforced DMARC, 3 YARA matches, presence of macros, failed authentication, and authentication system compromise attempt.
+W019,Warning,0.75,Credential request with moderate maliciousness (0.39), 2 YARA matches, presence of macros/VBScript/ActiveX, expired SSL certificate, and account targeting.
+W020,Warning,0.80,Invoice verification with packer detected, moderate maliciousness (0.45), 1 IOC detected, failed authentication, self-signed SSL certificate, and financial fraud indicators.
+W021,Warning,0.75,Document download request with moderate maliciousness (0.50), 2 YARA matches, presence of macros/VBScript/ActiveX, and malware delivery attempt.
+W022,Warning,0.70,Link click request with enforced DMARC but failed authentication, moderate maliciousness (0.40), presence of VBScript, expired SSL certificate, and URL shortener usage.
+W023,Warning,0.85,Wire transfer request with packer detected, high sender maliciousness (0.54), 3 IOCs detected, presence of macros/ActiveX, failed authentication, and critical financial fraud attempt.
+W024,Warning,0.75,Bank detail update request with moderate maliciousness (0.36), 2 YARA matches, presence of macros/ActiveX, multiple URLs, and financial targeting.
+W025,Warning,0.80,Meeting request with moderate maliciousness (0.48), presence of VBScript, expired SSL certificate, and social engineering with reply path differences.
+W026,Warning,0.80,Sensitive data request with enforced DMARC, packer detected, 2 IOCs, presence of macros/VBScript/ActiveX, failed authentication, self-signed SSL certificate, and sophisticated data harvesting.
+W027,Warning,0.75,Legal threat with moderate sender maliciousness (0.52), presence of macros, and pressure tactics with authentication issues.
+W028,Warning,0.80,VPN/MFA reset request with 3 YARA matches, presence of VBScript/ActiveX, expired SSL certificate, and authentication system targeting.
+W029,Warning,0.75,Credential request with packer detected, moderate maliciousness (0.46), 2 YARA matches, presence of macros/ActiveX, self-signed SSL certificate, and account compromise attempt.
+W030,Warning,0.80,Invoice payment request with enforced DMARC but failed authentication, 1 IOC detected, presence of VBScript, and financial fraud indicators.
+W031,Warning,0.75,Gift card request with moderate maliciousness (0.49), 2 YARA matches, presence of macros/VBScript/ActiveX, expired SSL certificate, and scam attempt.
+W032,Warning,0.75,Document download request with packer detected, moderate maliciousness (0.41), presence of ActiveX, self-signed SSL certificate, and malware delivery attempt.
+W033,Warning,0.80,Bank detail update request with 3 IOCs detected, moderate sender maliciousness (0.53), presence of macros, and financial targeting with multiple red flags.
+W034,Warning,0.75,Meeting request with enforced DMARC but failed authentication, 2 YARA matches, presence of macros/VBScript/ActiveX, expired SSL certificate, and social engineering.
+W035,Warning,0.80,Sensitive data request with moderate maliciousness (0.47), presence of VBScript, self-signed SSL certificate, and data harvesting attempt with authentication issues.
+W036,Warning,0.80,Legal threat with packer detected, 2 IOCs, moderate maliciousness (0.43), presence of macros/ActiveX, and pressure tactics with technical sophistication.
+W037,Warning,0.85,VPN/MFA reset request with enforced DMARC, moderate sender maliciousness (0.51), presence of VBScript, expired SSL certificate, reply path differences, and authentication system targeting.
+W038,Warning,0.75,Credential request with 3 YARA matches, moderate maliciousness (0.39), presence of macros/VBScript/ActiveX, self-signed SSL certificate, and account compromise attempt.
+W039,Warning,0.75,Invoice verification with moderate maliciousness (0.45), 2 YARA matches, 1 IOC, presence of macros, multiple URLs, and financial fraud indicators.
+W040,Warning,0.80,Document download request with packer detected, 1 IOC, moderate sender maliciousness (0.50), presence of VBScript/ActiveX, expired SSL certificate, and malware delivery.
+W041,Warning,0.70,Link click request with enforced DMARC, 2 YARA matches, moderate maliciousness (0.40), presence of macros/ActiveX, self-signed SSL certificate, and reply path differences.
+W042,Warning,0.85,Wire transfer request with moderate to high sender maliciousness (0.55), presence of macros/VBScript, failed authentication, and critical financial fraud attempt.
+W043,Warning,0.80,Bank detail update request with packer detected, 3 IOCs, moderate maliciousness (0.35), presence of ActiveX, expired SSL certificate, and financial targeting.
+W044,Warning,0.80,Meeting request with moderate maliciousness (0.48), 2 YARA matches, presence of macros/VBScript/ActiveX, self-signed SSL certificate, and social engineering.
+W045,Warning,0.75,Sensitive data request with enforced DMARC, moderate sender maliciousness (0.42), presence of VBScript, and data harvesting with reply path differences.
+W046,Warning,0.80,Legal threat with packer detected, 2 IOCs, moderate sender maliciousness (0.52), presence of macros/ActiveX, expired SSL certificate, and pressure tactics.
+W047,Warning,0.75,VPN/MFA reset request with moderate maliciousness (0.38), presence of macros/VBScript/ActiveX, self-signed SSL certificate, and authentication system targeting.
+W048,Warning,0.75,Credential request with 3 YARA matches, moderate maliciousness (0.46), multiple URLs, and account compromise attempt with mixed authentication.
+W049,Warning,0.80,Invoice payment request with enforced DMARC, packer detected, 2 YARA matches, moderate sender maliciousness (0.44), presence of macros/VBScript, expired SSL certificate, and financial fraud.
+W050,Warning,0.75,Gift card request with 1 IOC, moderate maliciousness (0.49), presence of macros/ActiveX, self-signed SSL certificate, and scam attempt.
+W051,Warning,0.75,Document download request with 2 YARA matches, moderate maliciousness (0.41), presence of VBScript/ActiveX, and malware delivery attempt.
+W052,Warning,0.80,Bank detail update request with packer detected, moderate sender maliciousness (0.53), presence of macros, expired SSL certificate, and financial targeting.
+W053,Warning,0.80,Meeting request with enforced DMARC, 3 IOCs, moderate maliciousness (0.37), presence of macros/VBScript/ActiveX, self-signed SSL certificate, and sophisticated social engineering.
+W054,Warning,0.75,Sensitive data request with 2 YARA matches, moderate maliciousness (0.47), presence of ActiveX, and data harvesting attempt.
+W055,Warning,0.75,Legal threat with moderate maliciousness (0.43), presence of macros/VBScript, expired SSL certificate, and pressure tactics.
+W056,Warning,0.85,VPN/MFA reset request with enforced DMARC, packer detected, 2 IOCs, moderate sender maliciousness (0.51), presence of macros/ActiveX, self-signed SSL certificate, and authentication system compromise.
+W057,Warning,0.70,Credential request with moderate maliciousness (0.39), presence of VBScript/ActiveX, reply path differences, and account targeting.
+W058,Warning,0.75,Invoice verification with 3 YARA matches, moderate maliciousness (0.45), presence of macros, expired SSL certificate, and financial fraud indicators.
+W059,Warning,0.80,Document download request with packer detected, 2 YARA matches, moderate sender maliciousness (0.50), presence of VBScript/ActiveX, self-signed SSL certificate, and malware delivery.
+W060,Warning,0.70,Link click request with enforced DMARC but failed authentication, 1 IOC, moderate maliciousness (0.40), presence of macros/ActiveX, and URL manipulation.
+W061,Warning,0.85,Wire transfer request with high sender maliciousness (0.54), 2 YARA matches, presence of macros/VBScript, reply path differences, expired SSL certificate, and critical financial fraud.
+W062,Warning,0.75,Bank detail update request with packer detected, moderate maliciousness (0.36), presence of ActiveX, self-signed SSL certificate, and financial targeting.
+W063,Warning,0.80,Meeting request with 3 IOCs, moderate sender maliciousness (0.48), presence of macros/VBScript/ActiveX, and social engineering with reply path differences.
+W064,Warning,0.80,Sensitive data request with enforced DMARC but failed authentication, 2 YARA matches, moderate sender maliciousness (0.42), presence of VBScript, expired SSL certificate, and data harvesting.
+W065,Warning,0.75,Legal threat with moderate sender maliciousness (0.52), presence of macros/ActiveX, reply path differences, self-signed SSL certificate, and pressure tactics.
+W066,Warning,0.80,VPN/MFA reset request with packer detected, 2 IOCs, moderate maliciousness (0.38), presence of macros/VBScript/ActiveX, and authentication system targeting.
+W067,Warning,0.75,Credential request with moderate maliciousness (0.46), multiple URLs, expired SSL certificate, and account compromise attempt.
+W068,Warning,0.80,Invoice payment request with enforced DMARC, 3 YARA matches, moderate sender maliciousness (0.44), presence of macros/VBScript, self-signed SSL certificate, and financial fraud.
+W069,Warning,0.75,Gift card request with packer detected, 2 YARA matches, moderate sender maliciousness (0.49), presence of macros/ActiveX, reply path differences, and scam attempt.
+W070,Warning,0.75,Document download request with 1 IOC, moderate maliciousness (0.41), presence of VBScript/ActiveX, expired SSL certificate, and malware delivery.
+W071,Warning,0.80,Bank detail update request with 2 YARA matches, moderate sender maliciousness (0.53), presence of macros, self-signed SSL certificate, and financial targeting.
+W072,Warning,0.80,Meeting request with enforced DMARC, packer detected, moderate maliciousness (0.37), presence of macros/VBScript/ActiveX, and sophisticated social engineering.
+W073,Warning,0.80,Sensitive data request with 3 IOCs, moderate sender maliciousness (0.47), presence of ActiveX, reply path differences, expired SSL certificate, and data harvesting.
+W074,Warning,0.75,Legal threat with 2 YARA matches, moderate maliciousness (0.43), presence of macros/VBScript, self-signed SSL certificate, and pressure tactics.
+W075,Warning,0.85,VPN/MFA reset request with enforced DMARC, moderate sender maliciousness (0.51), presence of macros/ActiveX, failed authentication, and authentication system targeting.
+W076,Warning,0.80,Credential request with packer detected, 2 IOCs, moderate maliciousness (0.39), presence of VBScript/ActiveX, expired SSL certificate, and account compromise.
+W077,Warning,0.75,Invoice verification with moderate maliciousness (0.45), presence of macros, reply path differences, self-signed SSL certificate, and financial fraud indicators.
+W078,Warning,0.75,Document download request with 3 YARA matches, moderate sender maliciousness (0.50), presence of VBScript/ActiveX, and malware delivery attempt.
+W079,Warning,0.70,Link click request with enforced DMARC, packer detected, 2 YARA matches, moderate maliciousness (0.40), presence of macros/ActiveX, expired SSL certificate, and URL manipulation.
+W080,Warning,0.85,Wire transfer request with high sender maliciousness (0.55), 1 IOC, presence of macros/VBScript, self-signed SSL certificate, and critical financial fraud attempt.
+W081,Warning,0.75,Bank detail update request with 2 YARA matches, moderate maliciousness (0.35), presence of ActiveX, reply path differences, and financial targeting.
+W082,Warning,0.80,Meeting request with packer detected, moderate sender maliciousness (0.48), presence of macros/VBScript/ActiveX, expired SSL certificate, and social engineering.
+W083,Warning,0.80,Sensitive data request with enforced DMARC, 3 IOCs, moderate sender maliciousness (0.42), presence of VBScript, self-signed SSL certificate, and data harvesting.
+W084,Warning,0.75,Legal threat with 2 YARA matches, moderate sender maliciousness (0.52), presence of macros/ActiveX, reply path differences, and pressure tactics.
+W085,Warning,0.75,VPN/MFA reset request with packer detected, moderate maliciousness (0.38), presence of macros/VBScript/ActiveX, expired SSL certificate, and authentication targeting.
+W086,Warning,0.75,Credential request with 2 IOCs, moderate maliciousness (0.46), multiple URLs, self-signed SSL certificate, and account compromise attempt.
+W087,Warning,0.80,Invoice payment request with enforced DMARC, moderate sender maliciousness (0.44), presence of macros/VBScript, reply path differences, and financial fraud.
+W088,Warning,0.80,Gift card request with packer detected, 3 YARA matches, moderate sender maliciousness (0.49), presence of macros/ActiveX, expired SSL certificate, and scam attempt.
+W089,Warning,0.75,Document download request with 2 YARA matches, moderate maliciousness (0.41), presence of VBScript/ActiveX, self-signed SSL certificate, and malware delivery.
+W090,Warning,0.80,Bank detail update request with 1 IOC, moderate sender maliciousness (0.53), presence of macros, and financial targeting with reply path differences.
+W091,Warning,0.80,Meeting request with enforced DMARC, packer detected, 2 YARA matches, moderate maliciousness (0.37), presence of macros/VBScript/ActiveX, expired SSL certificate, and sophisticated social engineering.
+W092,Warning,0.75,Sensitive data request with moderate maliciousness (0.47), presence of ActiveX, self-signed SSL certificate, and data harvesting attempt.
+W093,Warning,0.80,Legal threat with 3 IOCs, moderate sender maliciousness (0.43), presence of macros/VBScript, reply path differences, and pressure tactics.
+W094,Warning,0.85,VPN/MFA reset request with enforced DMARC, packer detected, 2 YARA matches, moderate sender maliciousness (0.51), presence of macros/ActiveX, expired SSL certificate, and authentication system compromise.
+W095,Warning,0.75,Credential request with moderate maliciousness (0.39), presence of VBScript/ActiveX, reply path differences, self-signed SSL certificate, and account targeting.
+W096,Warning,0.80,Invoice verification with 2 IOCs, moderate maliciousness (0.45), presence of macros, multiple URLs, and financial fraud indicators.
+W097,Warning,0.80,Document download request with packer detected, moderate sender maliciousness (0.50), presence of VBScript/ActiveX, expired SSL certificate, and malware delivery.
+W098,Warning,0.70,Link click request with enforced DMARC but failed authentication, 3 YARA matches, moderate maliciousness (0.40), presence of macros/ActiveX, self-signed SSL certificate, and URL manipulation.
+W099,Warning,0.85,Wire transfer request with high sender maliciousness (0.54), 2 YARA matches, presence of macros/VBScript, reply path differences, and critical financial fraud attempt.
+W100,Warning,0.75,Bank detail update request with packer detected, 1 IOC, moderate maliciousness (0.36), presence of ActiveX, expired SSL certificate, and financial targeting.
+W101,Warning,0.80,Invoice verification with sender spoof detected, 2 YARA matches, moderate sender maliciousness (0.47), presence of macros/ActiveX, reply path differences, and financial fraud with spoofing indicators.
