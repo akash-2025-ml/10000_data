@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D5833,Malicious,0.95,VPN/MFA reset with very high sandbox behavioral score (0.998) and very high exfiltration score (0.976). Winword spawning powershell. Clear credential theft with extreme behavioral indicators and process injection.
+D5834,Malicious,0.90,Wire transfer request with unscannable attachment and macro-enabled document. Reply path different from sender. High exfiltration score (0.196). Clear BEC using document-based evasion techniques and financial targeting.
+D5835,Warning,0.80,Document download with high metadata suspicious score (0.281). Failed SPF/DKIM. Image-only email flag. Warning due to document request with suspicious characteristics and authentication failures.
+D5836,No Action,0.75,Clean email with self-signed SSL. Passed SPF but low threat scores. High visual similarity score (0.39). Legitimate communication with minor certificate issues only.
+D5837,Warning,0.75,Sensitive data request with very high temp email likelihood (0.929). Return path mismatch. Expired SSL. Warning due to credential request from temporary email with poor security.
+D5838,Malicious,0.90,Meeting request with high exfiltration score (0.748). Failed SPF but high visual similarity to brand (0.159). Malicious due to extreme behavioral scores indicating data theft despite meeting content.
+D5839,Malicious,0.85,Clean email with reply path known malicious and high metadata suspicious score (0.510). High exfiltration score (0.634). Malicious due to known bad reply infrastructure combined with extreme behavioral anomalies.
+D5840,Spam,0.80,Clean email with very high spam score (0.915). Good sender reputation (0.267). Valid SSL. Spam due to bulk characteristics despite legitimate sender.
+D5841,Malicious,0.85,Legal threat with reply path different from sender and 3 malicious components. High sandbox behavioral score (0.039). Self-signed SSL. Clear threat using legal social engineering with malicious components.
+D5842,Warning,0.80,Link click request with high metadata suspicious score (0.395) and high exfiltration score (0.455). Very high visual similarity to brand (0.703). Warning due to link request with behavioral anomalies and brand impersonation.
+D5843,Warning,0.75,Bank detail update with revoked SSL certificate. Failed SPF but high visual similarity to brand (0.165). Warning due to financial request with security certificate issues.
+D5844,Malicious,0.95,VPN/MFA reset with 1 YARA match and very high exfiltration score (0.968). Winword spawning powershell. Very high visual similarity to brand (0.001). Clear credential theft with malware detection and extreme behavioral scores.
+D5845,Malicious,0.90,Wire transfer request with packer detected and VBScript/JavaScript detected. Very high exfiltration score (0.796). Failed SPF/DMARC. Clear BEC using advanced techniques and process evasion.
+D5846,Malicious,0.85,Document download with sender spoofed and very high metadata suspicious score (0.878). VBScript/JavaScript detected. DNS morphing detected. Clear threat using spoofing and active scripts with evasion techniques.
+D5847,Warning,0.75,Clean email with DNS morphing detected and image-only flag. Valid SSL but failed SPF/DMARC. Warning due to DNS manipulation despite otherwise clean content.
+D5848,Warning,0.75,Sensitive data request with failed SPF/DMARC. High visual similarity score (0.007). Valid SSL. Warning due to credential request with authentication failures.
+D5849,Warning,0.80,Meeting request with high metadata suspicious score (0.216) and SSL certificate mismatch. Very high visual similarity to brand (0.658). Warning due to meeting with certificate issues and brand impersonation.
+D5850,Warning,0.80,Clean email with DNS morphing detected and high exfiltration score (0.696). Valid SSL. Warning due to DNS manipulation and behavioral anomalies requiring investigation.
+D5851,Warning,0.70,Clean email with expired SSL certificate. Failed SPF/DMARC but low threat scores. Warning due to certificate expiration and authentication issues.
+D5852,Warning,0.75,Legal threat with very high temp email likelihood (0.622) and high metadata suspicious score (0.892). Self-signed SSL. Warning due to legal threat from temporary email with certificate risks.
+D5853,Malicious,0.85,Link click request with executable attachment and high AMSI score (0.366). Self-signed SSL but token validation successful. Clear threat using executable attachment despite some legitimate indicators.
+D5854,Warning,0.70,Bank detail update with high temp email likelihood (0.261) and expired SSL. Failed SPF. Warning due to financial request with certificate and authentication issues.
+D5855,Malicious,0.90,VPN/MFA reset with return path known malicious and very high exfiltration score (0.922). Winword spawning powershell. Clear credential theft using malicious infrastructure with extreme behavioral scores.
+D5856,Malicious,0.90,Wire transfer request with return path known malicious and high metadata suspicious score (0.403). Very high exfiltration score (0.678). Clear BEC using malicious infrastructure with extreme behavioral indicators.
+D5857,Malicious,0.85,Document download with executable attachment and 3 YARA matches. High sandbox behavioral score (0.082). Clear malware with multiple detections and behavioral anomalies.
+D5858,Warning,0.75,Clean email with return path known malicious and DMARC enforced. SSL certificate mismatch. Warning due to malicious return infrastructure despite enforcement.
+D5859,No Action,0.80,Sensitive data request with valid SSL. Failed SPF but low threat scores. Legitimate credential request with minor authentication issues.
+D5860,Warning,0.80,Meeting request with high IP geo risk (0.692) and SSL certificate mismatch. High exfiltration score (0.688). Warning due to meeting from high-risk location with certificate and behavioral concerns.
+D5861,Warning,0.80,Clean email with 1 YARA match and high metadata suspicious score (0.641). Very high AMSI score (0.671). Warning due to malware detection and behavioral anomalies requiring investigation.
+D5862,No Action,0.75,Clean email with valid SSL. Failed SPF/DKIM/DMARC but low threat scores. Legitimate communication with authentication issues only.
+D5863,Malicious,0.90,Legal threat with 1 YARA match and VBScript/JavaScript detected. Very high exfiltration score (0.978). 3 DNS morphing instances. Clear threat using legal social engineering with malware and extreme behavioral scores.
+D5864,Warning,0.75,Link click request with high sandbox behavioral score (0.036) and self-signed SSL. High exfiltration score (0.405). Warning due to link request with behavioral anomalies and certificate risks.
+D5865,Warning,0.75,Bank detail update with DNS morphing detected and expired SSL. Failed SPF. Warning due to financial request with DNS manipulation and certificate issues.
+D5866,Malicious,0.85,VPN/MFA reset with revoked SSL certificate and high temp email likelihood (0.474). Winword spawning powershell. High exfiltration score (0.600). Clear credential theft with certificate revocation and behavioral anomalies.
+D5867,Malicious,0.90,Wire transfer request with expired SSL and high metadata suspicious score (0.414). Very high exfiltration score (0.677). Clear BEC with extreme behavioral scores despite good authentication.
+D5868,Malicious,0.85,Document download with high metadata suspicious score (0.792) and 5 IOCs detected. High exfiltration score (0.450). Clear threat with multiple IOCs and behavioral anomalies.
+D5869,Warning,0.75,Clean email with reply path known malicious and DNS morphing detected. Valid SSL but failed DMARC. Warning due to malicious reply infrastructure and DNS manipulation.
+D5870,Warning,0.75,Sensitive data request with high temp email likelihood (0.408) and DNS morphing detected. Failed DKIM/DMARC. Warning due to credential request from temporary email with DNS manipulation.
+D5871,Malicious,0.90,Meeting request with executable attachment and very high metadata suspicious score (0.867). High sandbox behavioral score (0.408). High-risk role targeted. Clear threat using meeting social engineering with executable attachment and behavioral indicators.
+D5872,Warning,0.80,Clean email with return path mismatch and high exfiltration score (0.789). Valid SSL. Warning due to authentication mismatch and extreme behavioral anomalies requiring investigation.
+D5873,No Action,0.75,Clean email with valid SSL. Failed SPF/DMARC but low threat scores. Image-only email. Legitimate communication with authentication issues only.
+D5874,Warning,0.75,Legal threat with sender spoofed and 2 YARA matches. High temp email likelihood (0.202). Warning due to legal threat with spoofing and malware detections.
+D5875,Warning,0.80,Link click request with executable attachment and very high temp email likelihood (0.945). High metadata suspicious score (0.182). Warning due to link request from temporary email with executable attachment.
+D5876,No Action,0.80,Bank detail update with good sender reputation (0.785). Valid SSL. Failed SPF but low threat scores. Legitimate banking communication with minor authentication issues.
+D5877,Malicious,0.90,VPN/MFA reset with very high exfiltration score (0.885). Winword spawning powershell. Failed SPF. Clear credential theft with extreme behavioral scores and process injection.
+D5878,Malicious,0.90,Wire transfer request with DMARC enforced but high sandbox behavioral score (0.570) and high exfiltration score (0.487). Clear BEC with extreme behavioral indicators despite enforcement.
+D5879,Warning,0.80,Document download with high metadata suspicious score (0.176) and high exfiltration score (0.353). Failed DMARC. Warning due to document request with suspicious characteristics and behavioral anomalies.
+D5880,No Action,0.75,Clean email with good sender reputation (0.273). Valid SSL. Passed SPF. Low threat scores. Legitimate communication with proper authentication.
+D5881,No Action,0.75,Sensitive data request with valid SSL. Failed SPF but low threat scores. Legitimate credential request with minor authentication issues.
+D5882,Warning,0.80,Meeting request with high metadata suspicious score (0.146) and high exfiltration score (0.199). Failed SPF/DKIM. Warning due to meeting request with behavioral anomalies and authentication failures.
