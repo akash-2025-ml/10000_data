@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6833,Warning,0.78,Return path mismatch detected with expired SSL certificate. High spam score (0.60) and user marked as spam before. Moderate risk requiring verification.
+D6834,No Action,0.84,Clean profile with valid SSL and low risk scores. High spam score (0.93) but minimal other threat indicators suggest legitimate email.
+D6835,Malicious,0.95,Sender known malicious (flag=1) with ActiveX objects detected and high exfiltration score (0.59). Legal threat from confirmed malicious source.
+D6836,Warning,0.82,Return path mismatch with 2 YARA matches. High spam score (0.40) and link click request require caution despite valid SSL.
+D6837,Malicious,0.91,Reply path known malicious (flag=1) with high temp email likelihood (0.59). Bank detail update from confirmed threat actor.
+D6838,Warning,0.81,VPN/MFA reset with PowerShell execution and self-signed SSL. Moderate behavioral scores but authentication failures require caution.
+D6839,Malicious,0.93,Wire transfer with extremely high sandbox score (0.95) and high exfiltration (0.65). Multiple process execution indicates active threat.
+D6840,Warning,0.75,Document download with expired SSL and authentication failures. Moderate behavioral scores require verification.
+D6841,Malicious,0.96,Sender known malicious (flag=1) with high temp email likelihood (0.75). Valid SSL but confirmed malicious source overrides.
+D6842,Warning,0.73,Sensitive data request with high spam score (0.23) and authentication failures. Moderate risk profile.
+D6843,Malicious,0.89,Meeting request with executable attachment and 3 YARA matches. Return path mismatch and high metadata score (0.84) confirm threat.
+D6844,Warning,0.77,High spam score (0.85) with self-signed SSL and moderate sandbox score (0.12). Behavioral patterns require caution.
+D6845,Warning,0.76,3 URL counts detected with self-signed SSL and authentication failures. Moderate risk profile.
+D6846,Malicious,0.87,Legal threat with malicious attachment count=3 and exploit pattern detected. High behavioral scores confirm active threat.
+D6847,Malicious,0.92,Link click with DMARC enforced but extremely high metadata score (0.84) and AMSI suspicion (0.88). High exfiltration (0.98) confirms threat.
+D6848,Spam,0.86,Bank detail update with high spam score (0.51) and brand similarity (0.62). Authentication failures indicate phishing attempt.
+D6849,Malicious,0.88,VPN/MFA reset with PowerShell execution and malicious attachment count=2. Network call on open detected with high exfiltration (0.66).
+D6850,Warning,0.79,Wire transfer with unscannable attachment and high AMSI score (0.42). High exfiltration (0.84) requires verification.
+D6851,Warning,0.82,Document download with high metadata score (0.82) and brand similarity (0.47). High sender reputation but behavioral concerns.
+D6852,Spam,0.83,High spam score (0.61) with image-only email flag and DMARC enforced. Typical spam pattern with brand similarity.
+D6853,Malicious,0.90,Sensitive data request with return path known malicious (flag=1) and extremely high spam score (0.97). Clear phishing attempt.
+D6854,Warning,0.74,Meeting request with high-risk role targeted and certificate mismatch. Token validation failure adds concern.
+D6855,Warning,0.78,1 URL count with high URL reputation score (0.52) and moderate behavioral patterns. Valid SSL but caution required.
+D6856,Warning,0.71,2 URL counts with high URL reputation score (0.34) and authentication failures. Self-signed SSL adds risk.
+D6857,Warning,0.80,Legal threat with 5 IOC counts and self-signed SSL. User marked as spam before with moderate behavioral scores.
+D6858,Warning,0.83,Link click with high metadata score (0.35) and spam score (0.37). Authentication failures require caution.
+D6859,Warning,0.78,Bank detail update with high spam score (0.67) and certificate mismatch. Financial context requires verification.
+D6860,Malicious,0.94,Sender known malicious (flag=1) with PowerShell execution and 3 IOC counts. VPN/MFA reset from confirmed threat.
+D6861,Warning,0.82,Wire transfer with packer detected and high URL reputation (0.46). Authentication failures for financial request.
+D6862,Warning,0.76,Document download with high spam score (0.73) and authentication concerns. Moderate behavioral patterns.
+D6863,Spam,0.85,High temp email likelihood (0.86) with extremely high spam score (0.89) and 4 URL counts. Clear spam pattern.
+D6864,Warning,0.72,Sensitive data request with high temp email (0.25) and moderate spam score (0.23). Authentication concerns.
+D6865,Warning,0.79,Meeting request with high metadata score (0.32) and brand similarity (0.74). High spam score (0.11) requires caution.
+D6866,Warning,0.85,Macro-enabled document with extremely high AMSI score (0.97) and self-signed SSL. High behavioral concern.
+D6867,No Action,0.88,Clean profile with valid SSL and minimal risk scores. High sender reputation (0.25) indicates legitimate email.
+D6868,Malicious,0.86,Legal threat with return path known malicious (flag=1) and 3 YARA matches. High spam score (0.82) confirms threat.
+D6869,Malicious,0.97,Sender known malicious (flag=1) with extremely high metadata score (0.97) and certificate mismatch. High URL reputation (0.86) confirms sophisticated threat.
+D6870,Warning,0.74,Bank detail update with redirect chain and certificate mismatch. High spam score (0.89) for financial request.
+D6871,Warning,0.78,VPN/MFA reset with PowerShell execution and high spam score (0.17). Moderate behavioral scores require caution.
+D6872,Warning,0.81,Wire transfer with high metadata score (0.63) and redirect chain length=2. Expired SSL for financial request.
+D6873,Warning,0.84,Document download with high sandbox score (0.83) and exfiltration (0.96). High-risk role targeted requires verification.
+D6874,Warning,0.82,8 URL counts detected with high spam score (0.87). Mixed authentication results require caution.
+D6875,Warning,0.71,Sensitive data request with self-signed SSL and moderate spam score (0.08). Authentication concerns present.
+D6876,Warning,0.77,Meeting request with return path known malicious (flag=1) and high exfiltration (0.74). Authentication failures add risk.
+D6877,No Action,0.86,DMARC enforced with high sender reputation (0.96) and self-signed SSL. Minimal other risk indicators.
+D6878,Warning,0.69,Reply path differs from sender with high URL reputation (0.24). Authentication failures require caution.
+D6879,Warning,0.83,Legal threat with YARA match and high exfiltration (0.99). Self-signed SSL and moderate behavioral scores.
+D6880,Warning,0.78,Link click with high metadata score (0.39) and spam score (0.93). Moderate behavioral patterns require caution.
+D6881,Warning,0.74,Bank detail update with certificate mismatch and moderate behavioral scores. Financial context requires verification.
+D6882,Spam,0.87,VPN/MFA reset with VBScript/JavaScript detected and high spam score (0.68). Authentication failures indicate spam campaign.

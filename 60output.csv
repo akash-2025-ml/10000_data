@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6383,Warning,0.80,Wire transfer request with YARA match and high exfiltration behavior score (0.865) combined with failed DKIM and moderate behavioral indicators suggest potential BEC requiring verification.
+D6384,Malicious,0.95,Document download with packer detected AND exploit pattern detected combined with high sender temp email likelihood (0.730) and failed SPF indicates confirmed malware delivery through phishing.
+D6385,Spam,0.75,High sender temp email likelihood (0.191) with high marketing score (0.584) and visual brand similarity (0.603) indicates marketing spam rather than targeted threat.
+D6386,Warning,0.70,Sensitive data request with high sender reputation but failed SPF and moderate visual brand similarity suggests potentially compromised infrastructure requiring caution.
+D6387,Warning,0.85,Meeting request with high metadata suspicious score (0.548) and behavioral sandbox score (0.546) combined with failed authentication but no confirmed malicious indicators.
+D6388,Warning,0.80,Multiple YARA matches (8) with known malicious return path and moderate suspicious behaviors but self-signed SSL suggests investigation needed.
+D6389,No Action,0.80,Low risk scores across all indicators with softfail SPF but valid authentication and no malicious content suggests legitimate communication.
+D6390,Warning,0.80,Legal threat with high AMSI score (0.717) and behavioral issues combined with expired SSL and failed DKIM but no confirmed malicious indicators.
+D6391,Warning,0.85,Link click request with unscannable attachment and network call on open with self-signed SSL and high exfiltration score (0.968) suggests potential threat requiring caution.
+D6392,Malicious,0.90,Bank detail update with sender spoof detected and high spam score (0.760) combined with failed DKIM indicates financial fraud BEC attempt.
+D6393,Warning,0.80,VPN/MFA reset with high metadata suspicious score (0.679) and behavioral issues with self-signed SSL and failed authentication but no confirmed malicious indicators.
+D6394,Malicious,0.90,Wire transfer with known malicious reply path and network call on open combined with visual brand similarity (0.211) indicates financial fraud phishing.
+D6395,Warning,0.85,Document download with DNS morphing detected and visual brand similarity (0.755) combined with self-signed SSL but no confirmed malicious files.
+D6396,No Action,0.85,Low risk scores with valid authentication and high reply path reputation (0.591) indicates legitimate communication despite failed SPF.
+D6397,Spam,0.80,Sensitive data request with high sender temp email likelihood (0.199) and moderate marketing indicators suggests data harvesting spam.
+D6398,Warning,0.75,Meeting request with high behavioral sandbox score (0.583) and moderate suspicious behaviors but low visual similarity suggests verification needed.
+D6399,Warning,0.80,High sender temp email likelihood (0.168) with SMTP IP marked malicious and moderate suspicious scores suggests compromised sender requiring caution.
+D6400,Warning,0.80,High sender temp email likelihood (0.719) with SMTP IP marked malicious and self-signed SSL but valid SPF suggests potential threat requiring investigation.
+D6401,Malicious,0.95,Legal threat with file hash marked malicious (confirmed) and multiple URLs (5) indicates confirmed malware delivery through fear tactics.
+D6402,Warning,0.80,Link click with ActiveX objects detected and high sandbox execution time (160.8s) suggesting time-delayed payload but no confirmed malicious indicators.
+D6403,Malicious,0.85,Bank detail update with known malicious reply path and SMTP IP marked malicious combined with failed SPF indicates financial fraud BEC.
+D6404,Warning,0.85,VPN/MFA reset with DMARC enforced but failed and executable attachment with high exfiltration score (0.977) but no confirmed malicious files.
+D6405,Warning,0.80,Wire transfer with high reply path reputation (0.752) and SMTP geo risk (0.946) but self-signed SSL suggests BEC requiring verification.
+D6406,Warning,0.85,Document download with high metadata suspicious score (0.973) and multiple IOCs (5) but low malicious scores suggests sophisticated threat requiring investigation.
+D6407,No Action,0.75,Low risk scores with valid authentication despite DKIM permerror and failed DMARC suggests legitimate communication with configuration issues.
+D6408,Spam,0.80,Sensitive data request with high marketing score (0.860) and failed authentication indicates data harvesting spam campaign.
+D6409,Warning,0.75,Meeting request with high exfiltration behavior score (0.811) and moderate suspicious behaviors suggests social engineering requiring verification.
+D6410,Malicious,0.98,Known malicious sender (confirmed threat actor) with exploit pattern detected and high exfiltration score (0.994) confirms advanced persistent threat.
+D6411,Warning,0.80,SMTP IP marked malicious with expired SSL and failed authentication but low other risk scores suggests compromised infrastructure.
+D6412,Warning,0.85,Legal threat with 6 YARA matches and high exfiltration score (0.958) and high visual brand similarity (0.790) suggests sophisticated phishing requiring investigation.
+D6413,Malicious,0.95,Link click with file hash marked malicious (confirmed) and high AMSI score (0.775) indicates confirmed malware delivery.
+D6414,Malicious,0.90,Bank detail update with known malicious return path and self-signed SSL with high URL rendering behavior (0.994) indicates financial fraud phishing.
+D6415,Warning,0.85,VPN/MFA reset with high metadata suspicious score (0.476) and behavioral sandbox score (0.575) combined with high visual similarity (0.863) but no confirmed malicious indicators.
+D6416,Warning,0.85,Wire transfer with high metadata suspicious score (0.832) and exfiltration behavior (0.611) with high visual brand similarity (0.835) but no confirmed malicious indicators.
+D6417,Malicious,0.90,Document download with exploit pattern detected (confirmed) and high metadata suspicious score with URL spoof detected indicates confirmed phishing attack.
+D6418,No Action,0.75,Low risk scores with failed authentication but valid TLS and low malicious indicators suggests legitimate communication with auth issues.
+D6419,Spam,0.80,Sensitive data request with SSL mismatch and moderate spam indicators suggests data harvesting spam rather than targeted threat.
+D6420,Malicious,0.98,Known malicious sender (confirmed threat actor) with meeting request and high AMSI score (0.454) combined with self-signed SSL confirms threat.
+D6421,Warning,0.80,High AMSI suspicion score (0.904) with visual brand similarity (0.809) but failed authentication suggests sophisticated threat requiring investigation.
+D6422,Malicious,0.98,Known malicious sender (confirmed threat actor) with high sender temp email likelihood (0.435) and SSL mismatch indicates confirmed threat communication.
+D6423,Warning,0.80,Legal threat with high AMSI score (0.569) and multiple components detected malicious (2) but no confirmed malicious files suggests investigation needed.
+D6424,Warning,0.80,Link click with high sender temp email likelihood (0.084) and high visual similarity (0.531) but valid authentication suggests phishing requiring verification.
+D6425,Spam,0.80,Bank detail update with moderate suspicious scores but failed authentication indicates financial spam rather than sophisticated BEC.
+D6426,Malicious,0.98,VPN/MFA reset with packer detected (confirmed) and high sender temp email likelihood (0.859) with multiple components malicious (7) confirms advanced malware delivery.
+D6427,Malicious,0.95,Wire transfer with exploit pattern detected (confirmed) and high visual brand similarity (0.802) combined with high marketing score (0.833) confirms BEC with social engineering.
+D6428,Warning,0.80,Document download with high SMTP geo/ASN risks and self-signed SSL but failed DKIM suggests compromised sender requiring verification.
+D6429,Warning,0.75,Known malicious return path with moderate suspicious scores but valid authentication suggests compromised infrastructure requiring caution.
+D6430,Spam,0.75,Sensitive data request with high visual similarity (0.750) but self-signed SSL and low malicious scores indicates marketing spam with poor security.
+D6431,Warning,0.75,Meeting request with high SMTP geo risk (0.795) and visual brand similarity (0.251) but failed DMARC suggests social engineering requiring verification.
+D6432,Warning,0.80,Multiple YARA matches (3) with high SMTP geo/ASN risks and self-signed SSL but high sandbox execution time suggests investigation needed.

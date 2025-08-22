@@ -1,0 +1,50 @@
+D7233,Warning,0.75,High-risk processes (excel.exe, cmd.exe, powershell.exe) with elevated exfiltration score (0.766), high entropy (0.914), gift_card_request type, failed SPF and mismatch SSL indicate potential phishing attempt
+D7234,No Action,0.85,Clean reputation scores, passing SPF, minimal threat indicators despite multiple processes - appears legitimate with standard office automation
+D7235,Warning,0.70,Return path marked malicious, very high exfiltration score (0.919), VBScript detected, failed all authentication checks suggest suspicious activity
+D7236,No Action,0.90,Strong sender reputation (0.445), passing SPF, no malicious indicators, clean behavioral scores indicate legitimate email
+D7237,Spam,0.80,Temporary email likelihood (0.341), urgent callback request, minimal threat indicators suggest low-risk spam attempt
+D7238,No Action,0.80,DMARC enforced, return path mismatch, but passing SPF, low threat scores overall - appears legitimate bulk email
+D7239,Malicious,0.85,Extremely high sandbox scores (0.824, 0.848), high exfiltration behavior (0.913), self-signed SSL, suspicious processes indicate malware
+D7240,No Action,0.85,High return path reputation (0.978), low threat scores, passing SPF, moderate SMTP reputation (0.568) - appears legitimate despite failed DKIM
+D7241,No Action,0.80,High sender reputation (0.830), strong urgency keywords (0.744), passing SPF/DMARC, low malicious indicators - legitimate urgent email
+D7242,Malicious,0.90,Sender marked malicious, gift_card_request with very high urgency score (0.833), failed SPF, suspicious behavior patterns
+D7243,Warning,0.65,Bank detail update request with high return path reputation (0.785), self-signed certificate raises security concerns
+D7244,No Action,0.80,Low threat scores, passing SPF, self-signed SSL but high SMTP reputation (0.920) - appears legitimate
+D7245,Warning,0.75,High exfiltration score (0.712), domain marked as gift card request, but passing SPF and low other threat indicators
+D7246,Malicious,0.85,File hash marked malicious, 4 YARA matches, suspicious processes including curl.exe and rundll32.exe indicate active threat
+D7247,Warning,0.70,Exploit pattern detected, high sandbox execution time (79.5), high AMSI score (0.718), but low reputation risks
+D7248,Warning,0.80,Wire transfer request with high exfiltration score (0.757), suspicious processes (regsvr32.exe), high SMTP reputation (0.839), failed SPF
+D7249,Spam,0.75,Domain marked malicious, invoice verification, temporary email likelihood (0.825), multiple authentication failures indicate spam
+D7250,Malicious,0.90,Sender marked malicious, wire transfer request, high sandbox scores, self-signed SSL, failed authentication - clear phishing attempt
+D7251,Warning,0.70,Invoice payment request with high urgency score (0.265), exfiltration score (0.550), mismatch SSL - monitoring needed
+D7252,Malicious,0.85,Return path marked malicious, network call on open, high AMSI score (0.663), suspicious processes indicate malware
+D7253,Malicious,0.95,Sender and SMTP IP marked malicious, VPN/MFA reset request, multiple authentication failures - critical security threat
+D7254,No Action,0.85,Clean reputation scores, passing SPF/DMARC, redirect chain detected but no malicious content found
+D7255,Warning,0.75,Very high exfiltration score (0.938), suspicious processes (mshta.exe), high SMTP reputation (0.873), self-signed SSL
+D7256,Warning,0.70,High behavioral scores (0.295, 0.529), suspicious processes (mshta.exe, wscript.exe), moderate urgency score (0.578)
+D7257,Spam,0.80,Legal threat type, temporary email likelihood (0.853), DMARC enforced, self-signed SSL but no malicious content
+D7258,Spam,0.75,Document download request, moderate sender reputation (0.529), permerror DMARC, but no malicious indicators
+D7259,Warning,0.80,Gift card request, high exfiltration score (0.672), expired SSL certificate, URL marked malicious - potential phishing
+D7260,Warning,0.75,High sandbox score (0.810), suspicious processes (curl.exe, rundll32.exe), high SMTP reputation (0.912) - monitoring recommended
+D7261,Spam,0.70,Urgent callback request, passing authentication, but elevated spam characteristics and temporary email patterns
+D7262,No Action,0.80,Low threat scores, reply path differs from sender, but passing SPF/DMARC, minimal risk indicators
+D7263,Spam,0.75,Link click request type with moderate threat scores, but no malicious content or authentication failures
+D7264,No Action,0.85,Multiple processes detected but clean reputation scores, passing SPF, valid SSL - appears legitimate
+D7265,Malicious,0.90,Wire transfer request, packer detected, 7 YARA matches, URL shortener detected - high-risk phishing attempt
+D7266,No Action,0.75,Wire transfer request, marketing keywords detected, but strong authentication and low threat scores
+D7267,Warning,0.75,Gift card request, suspicious processes, URL marked malicious with redirect detected - potential phishing
+D7268,No Action,0.80,YARA match detected but overall clean scores, passing SPF, valid SSL - likely false positive
+D7269,Malicious,0.85,Very high exfiltration score (0.980), very high SMTP IP reputation (0.984), expired SSL - clear malicious activity
+D7270,Malicious,0.85,Domain marked malicious, multiple URL detections, invoice verification request - clear phishing attempt
+D7271,Warning,0.75,YARA match, high return path reputation (0.829), no TLS encryption, failed authentication - security risk
+D7272,Malicious,0.90,Very high sandbox score (0.989), suspicious processes (regsvr32.exe), failed authentication - malware detected
+D7273,Warning,0.70,Wire transfer request, URL marked malicious, self-signed SSL, but low overall threat scores
+D7274,No Action,0.85,Very low threat scores, SMTP IP reputation high (0.949), passing SPF - appears legitimate
+D7275,No Action,0.90,Clean reputation scores, passing SPF, valid SSL, no malicious indicators detected
+D7276,No Action,0.85,Low threat scores across all indicators, passing SPF, valid SSL certificate - legitimate email
+D7277,Spam,0.80,Gift card request, temporary email (0.968), multiple URLs detected, high URL reputation (0.977) - spam
+D7278,Malicious,0.95,8 malicious attachments, wire transfer request, very high sandbox score (0.808), failed SPF - critical threat
+D7279,Warning,0.70,Document download request, domain marked malicious, moderate exfiltration score (0.367), failed SPF - suspicious
+D7280,Warning,0.75,SMTP IP marked malicious, high urgency score (0.545), softfail SPF, but low overall threat scores - monitoring recommended
+D7281,Warning,0.80,Sensitive data request, DMARC enforced, SMTP reputation high (0.912), self-signed SSL, but low overall threat scores
+D7282,Spam,0.80,Meeting request, temporary email likelihood (0.884), self-signed SSL, but no malicious content detected

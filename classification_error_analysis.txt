@@ -1,0 +1,78 @@
+CLASSIFICATION ERROR ANALYSIS - FILE 076
+===============================================
+
+Analyzing records for potential misclassifications based on binary malicious indicators.
+
+MALICIOUS INDICATORS TO CHECK:
+- sender_known_malicios (col 2) = 1
+- packer_detected (col 7) = 1  
+- any_file_hash_malicious (col 8) = 1
+- return_path_known_malicious (col 28) = 1
+- reply_path_known_malicious (col 30) = 1
+- smtp_ip_known_malicious (col 33) = 1
+- domain_known_malicious (col 37) = 1
+- final_url_known_malicious (col 60) = 1
+- any_active_x_objects_detected (col 19) = 1
+- sender_spoof_detected (col 4) = 1
+
+ANALYSIS RESULTS:
+================
+
+1. CORRECTLY CLASSIFIED MALICIOUS RECORDS:
+-------------------------------------------
+D7192: sender_known_malicios=1, return_path_known_malicious=1 → MALICIOUS ✓
+D7193: return_path_known_malicious=1 → MALICIOUS ✓  
+D7196: return_path_known_malicious=1 → MALICIOUS ✓
+D7197: reply_path_known_malicious=1 → MALICIOUS ✓
+D7209: sender_known_malicios=1 → MALICIOUS ✓
+D7222: smtp_ip_known_malicious=1 → MALICIOUS ✓
+D7223: sender_known_malicios=1, sender_spoof_detected=1 → MALICIOUS ✓
+D7230: final_url_known_malicious=1 → MALICIOUS ✓
+D7231: return_path_known_malicious=1 → MALICIOUS ✓
+
+2. POTENTIAL MISCLASSIFICATIONS FOUND:
+-------------------------------------
+
+ERROR #1: D7218 - SHOULD BE MALICIOUS
+Current Classification: Warning
+Malicious Indicators Found:
+- any_active_x_objects_detected = 1
+- malicious_attachment_count = 6
+- is_high_risk_role_targeted = 1
+- moderate exfiltration_behavior_score = 0.4878
+- Multiple processes: excel.exe, cmd.exe, powershell.exe
+RECOMMENDATION: Should be classified as MALICIOUS due to ActiveX objects detected
+
+ERROR #2: D7198 - VERIFY CLASSIFICATION  
+Current Classification: Warning
+Malicious Indicators Found:
+- sender_spoof_detected = 1
+- high sender_name_similarity_to_vip = 0.7682
+RECOMMENDATION: Could remain Warning as spoofing alone may not warrant Malicious classification
+
+ERROR #3: D7207 - VERIFY CLASSIFICATION
+Current Classification: Warning  
+Malicious Indicators Found:
+- any_network_call_on_open = 1
+- very high exfiltration_behavior_score = 0.9704
+- total_components_detected_malicious = 1
+RECOMMENDATION: Consider upgrading to MALICIOUS due to very high exfiltration behavior (>0.9) + malicious components
+
+3. HIGH-RISK WARNINGS THAT MIGHT NEED REVIEW:
+---------------------------------------------
+
+D7189: Warning - Very high exfiltration (0.8350), 1 YARA match, winword+powershell
+D7190: Warning - Very high exfiltration (0.7963), 5 YARA matches, unscannable attachment
+D7194: Warning - DNS morphing detected (1), URL shortener detected (1)
+D7201: Warning - High metadata suspicious (0.7557), network call on open (1)
+D7226: Warning - Very high exfiltration (0.9704), network call on open (1), malicious components (1)
+
+SUMMARY OF CLASSIFICATION ERRORS:
+=================================
+CONFIRMED ERROR: D7218 should be MALICIOUS (has ActiveX objects detected = 1)
+POTENTIAL ERRORS: D7207 (very high exfiltration + malicious components)
+
+Total records analyzed: 50
+Records with binary malicious indicators: 11
+Correctly classified as Malicious: 9  
+Potential misclassifications: 1-2

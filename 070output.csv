@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6883,Malicious,0.91,Wire transfer with unscannable attachment and extremely high AMSI score (0.92). High exfiltration behavior (0.84) indicates active malware.
+D6884,Malicious,0.93,Document download with return path known malicious (flag=1) and high metadata score (0.73). Self-signed SSL confirms threat.
+D6885,Warning,0.74,High spam score (0.58) with valid SSL and authentication failures. Moderate brand similarity requires caution.
+D6886,Warning,0.78,Sensitive data request with high spam score (0.58) and revoked SSL. Brand similarity suggests impersonation.
+D6887,Warning,0.81,Meeting request with sender spoof detected. Valid SSL but spoofing requires caution.
+D6888,Warning,0.79,Moderate AMSI (0.47) and exfiltration (0.71) with 3 links. Valid SSL but behavioral patterns concerning.
+D6889,Malicious,0.95,Final URL known malicious (flag=1) with user marked as spam and bulk message indicator. Confirmed threat.
+D6890,Malicious,0.96,Return path known malicious (flag=1) and SMTP IP known malicious (flag=1). Multiple confirmed threat indicators.
+D6891,Warning,0.82,Link click with 4 links and authentication failures. Moderate behavioral scores require caution.
+D6892,Warning,0.74,Bank detail update with authentication failures. Financial context requires verification.
+D6893,Malicious,0.93,VPN/MFA reset with PowerShell execution and executable attachment. Classic security bypass attack.
+D6894,Warning,0.83,Wire transfer with high metadata score (0.90) and high temp email (0.72). Financial request requires verification.
+D6895,Warning,0.81,Document download with high metadata score (0.29) and redirect chain. Self-signed SSL adds risk.
+D6896,Spam,0.87,High temp email likelihood (0.89) with high spam score (0.69) and self-signed SSL.
+D6897,Warning,0.83,Sensitive data request with high URL reputation (0.32) and 4 links. Self-signed SSL concerning.
+D6898,Malicious,0.89,Meeting request with return path mismatch and 2 YARA matches. High sandbox score (0.85) and brand similarity (0.71) confirm threat.
+D6899,Warning,0.76,Moderate sandbox score with brand similarity and authentication failures. Valid SSL but concerns present.
+D6900,Spam,0.89,High temp email likelihood (0.75) with extremely high spam score (0.96). Classic spam campaign.
+D6901,Malicious,0.97,Sender known malicious (flag=1) with DMARC enforced. Legal threat from confirmed malicious source.
+D6902,Warning,0.80,Link click with redirect chain and moderate behavioral scores. Authentication concerns present.
+D6903,Warning,0.78,Bank detail update with return path mismatch and URL shortener. Brand similarity concerning.
+D6904,Malicious,0.95,VPN/MFA reset with PowerShell execution and extremely high exfiltration (0.99). Active attack confirmed.
+D6905,Warning,0.84,High metadata score (0.43) with multiple process execution. Behavioral patterns concerning.
+D6906,Malicious,0.94,Domain known malicious (flag=1) with high temp email and spam score. Confirmed threat source.
+D6907,Malicious,0.90,Packer detected with YARA match and high sandbox score (0.47). Active malware delivery.
+D6908,Warning,0.76,Gift card request with high spam score and URL reputation. Financial scam pattern.
+D6909,Warning,0.73,Meeting request with moderate spam score. Authentication passes suggest legitimate email.
+D6910,Warning,0.75,Reply path differs from sender with self-signed SSL. Authentication failures concerning.
+D6911,Warning,0.83,High metadata score (0.61) with extremely high spam score (0.96) and self-signed SSL.
+D6912,Warning,0.78,PowerShell execution with authentication failures. Moderate risk profile.
+D6913,Malicious,0.92,Return path known malicious (flag=1) with VPN/MFA reset and 4 links. Self-signed SSL confirms threat.
+D6914,Malicious,0.91,Final URL known malicious (flag=1) with expired SSL and high brand similarity. Confirmed threat delivery.
+D6915,Warning,0.76,Bank detail update with high spam score (0.82) and authentication failures. Financial context concerning.
+D6916,Warning,0.78,Invoice verification with redirect chain and high spam score (0.95). Business email compromise pattern.
+D6917,Warning,0.74,Reply path differs from sender with authentication failures. Moderate behavioral concerns.
+D6918,Spam,0.85,High temp email likelihood (0.75) with high spam score (0.66). Spam campaign pattern.
+D6919,Warning,0.82,Gift card request with multiple process execution. Financial request requires verification.
+D6920,Warning,0.79,Multiple process execution with expired SSL. Behavioral patterns require caution.
+D6921,Warning,0.81,Expired SSL with moderate behavioral scores. Authentication failures present.
+D6922,Warning,0.74,High metadata score (0.68) with authentication failures. Moderate behavioral concerns.
+D6923,Warning,0.77,Certificate mismatch with urgent callback request. Social engineering attempt pattern.
+D6924,No Action,0.86,DMARC enforced with valid SSL and low risk scores. Legitimate communication.
+D6925,Warning,0.83,High exfiltration (0.95) with PowerShell execution. Behavioral patterns concerning.
+D6926,Warning,0.80,High spam score (0.94) with URL decoded spoof detected. Multiple links require verification.
+D6927,Warning,0.75,URL decoded spoof detected with expired SSL. Authentication failures present.
+D6928,Warning,0.78,DMARC enforced with self-signed SSL. Gift card request requires verification.
+D6929,Warning,0.78,DMARC enforced with self-signed SSL. Gift card request pattern.
+D6930,Malicious,0.93,Return path known malicious (flag=1) with bank detail update. Confirmed threat despite valid SSL.
+D6931,Warning,0.79,Authentication failures with moderate behavioral scores. Valid SSL but concerns present.
+D6932,Warning,0.83,High URL reputation (0.70) with authentication failures. Behavioral patterns require caution.

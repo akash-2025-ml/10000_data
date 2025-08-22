@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6433,No Action,0.85,Low risk across all indicators with valid authentication and high sender reputation (0.627). Failed SPF but DMARC temperror suggests configuration issues rather than malicious activity.
+D6434,Malicious,0.95,Legal threat with domain known malicious (confirmed threat) and high metadata suspicious score (0.802) combined with YARA matches (2) and self-signed SSL confirms phishing attack.
+D6435,Warning,0.80,Link click with network call on open and high marketing score (0.889) with failed authentication and visual brand similarity (0.300) suggests phishing requiring verification.
+D6436,Spam,0.75,Bank detail update request with low risk scores and legitimate authentication indicates financial marketing rather than fraudulent BEC attempt.
+D6437,Malicious,0.95,VPN/MFA reset with URL spoof detected (confirmed malicious) and high metadata suspicious score (0.779) with IOC detected confirms sophisticated phishing attack.
+D6438,Malicious,0.95,Wire transfer with domain known malicious (confirmed threat) and multiple YARA matches (4) with return path mismatch and high behavioral sandbox score (0.741) confirms BEC financial fraud attack.
+D6439,Warning,0.85,Document download with high metadata suspicious score (0.821) and sender temp email likelihood (0.320) but lacks confirmed malicious indicators requiring verification.
+D6440,No Action,0.80,High sender reputation (0.344) with valid authentication and low risk scores across all indicators suggests legitimate communication.
+D6441,Malicious,0.90,Sensitive data request with known malicious reply path and high SMTP geo risk (0.892) combined with high marketing score (0.723) indicates credential harvesting attack.
+D6442,Warning,0.80,Meeting request with high visual brand similarity (0.763) and failed SPF with DMARC permerror suggests social engineering requiring verification.
+D6443,Warning,0.85,Executable attachment with high AMSI score (0.961) and behavioral sandbox score (0.424) with self-signed SSL but no confirmed malicious files requires investigation.
+D6444,Warning,0.85,High sender temp email likelihood (0.898) with DMARC enforced but failed and revoked SSL certificate with bulk message indicator suggests compromised infrastructure.
+D6445,Warning,0.75,Legal threat with network call on open and high metadata suspicious score (0.212) but low overall malicious indicators suggests investigation needed.
+D6446,Malicious,0.95,Link click with known malicious return path (confirmed threat) and high behavioral sandbox score (0.490) combined with DMARC permerror confirms phishing attack.
+D6447,Spam,0.75,Bank detail update with high SMTP geo risk (0.685) but valid authentication and low malicious indicators suggests financial marketing spam.
+D6448,Warning,0.85,VPN/MFA reset with high behavioral sandbox score (0.540) and multiple components malicious (2) but no confirmed malicious files requires investigation.
+D6449,Malicious,0.95,Wire transfer with known malicious return path (confirmed threat) and high reply path reputation (0.488) with image-only email (1.0) confirms BEC attack using visual deception.
+D6450,Malicious,0.98,Known malicious sender (confirmed threat actor) with document download request and multiple URLs (4) confirms threat actor delivering malware through document-based attack.
+D6451,Warning,0.80,High SMTP geo risk (0.973) with known malicious reply path but valid SPF suggests compromised infrastructure requiring investigation.
+D6452,Spam,0.75,Sensitive data request with failed authentication but low malicious scores and image-only indicator suggests data harvesting spam.
+D6453,Malicious,0.90,Meeting request with URL spoof detected (confirmed malicious) and high metadata suspicious score (0.686) with behavioral sandbox score (0.631) confirms sophisticated phishing.
+D6454,Warning,0.85,High sender temp email likelihood (0.772) with YARA match, multiple URLs (6), and high URL reputation (0.784) suggests phishing requiring verification.
+D6455,No Action,0.80,Known malicious reply path but very low risk scores across all other indicators and valid authentication suggests legitimate communication with compromised infrastructure.
+D6456,Warning,0.80,Legal threat with DMARC enforced but failed and high visual brand similarity (0.272) suggests social engineering requiring verification.
+D6457,Warning,0.85,Link click with revoked SSL certificate and high visual similarity (0.255) but mixed authentication results suggests phishing requiring investigation.
+D6458,Spam,0.80,Bank detail update with expired SSL and high spam score (0.800) but failed DMARC suggests financial marketing spam with poor security.
+D6459,Warning,0.85,VPN/MFA reset with VBScript detected and self-signed SSL with high marketing score (0.955) suggests sophisticated phishing requiring verification.
+D6460,Warning,0.85,Wire transfer with sender spoof detected and expired SSL with high marketing score (0.730) but no confirmed malicious indicators requires investigation.
+D6461,Warning,0.80,Document download with high visual brand similarity (0.455) and moderate suspicious behaviors but valid authentication suggests verification needed.
+D6462,No Action,0.85,DMARC enforced with high visual similarity to VIP (0.835) but very low risk scores and valid authentication suggests legitimate executive communication.
+D6463,Malicious,0.90,Sensitive data request with SMTP IP marked malicious (confirmed threat) and expired SSL with high sender temp email likelihood (0.479) confirms attack from compromised infrastructure.
+D6464,Warning,0.85,Meeting request with YARA matches (2), high behavioral sandbox score (0.540) and visual similarity (0.776) but failed authentication requires investigation.
+D6465,Malicious,0.90,Macro enabled document with known malicious return path (confirmed threat) and self-signed SSL with high metadata suspicious score (0.455) confirms malware delivery.
+D6466,No Action,0.75,Low risk scores with valid authentication despite failed DMARC suggests legitimate communication with configuration issues.
+D6467,Warning,0.85,Legal threat with high metadata suspicious score (0.407) and exfiltration behavior (0.892) but no confirmed malicious indicators requires investigation.
+D6468,Warning,0.80,Link click with high metadata suspicious score (0.494) and exfiltration behavior (0.830) but failed DKIM suggests compromised sender requiring verification.
+D6469,Spam,0.80,Bank detail update with high sender temp email likelihood (0.354) and high SMTP ASN risk (0.715) suggests financial marketing spam.
+D6470,Malicious,0.95,VPN/MFA reset with packer detected AND final URL known malicious (confirmed threats) and high metadata suspicious score (0.183) confirms advanced malware delivery.
+D6471,Warning,0.80,Wire transfer with high AMSI score (0.703) and expired SSL with high SMTP ASN risk (0.668) suggests BEC requiring verification.
+D6472,Warning,0.75,Document download with high exfiltration behavior (0.923) and high SMTP geo risk (0.603) but low other indicators suggests investigation needed.
+D6473,Malicious,0.90,Final URL known malicious (confirmed threat) with high visual similarity (0.623) and URL redirect detected confirms phishing attack leading to malicious destination.
+D6474,Spam,0.80,Sensitive data request with expired SSL and high SMTP ASN risk (0.951) but low malicious indicators suggests data harvesting spam.
+D6475,Malicious,0.98,Meeting request with 5 malicious attachments detected (confirmed threat) and high behavioral sandbox score (0.437) with self-signed SSL confirms advanced malware delivery.
+D6476,Warning,0.80,High marketing score (0.949) with failed authentication and self-signed SSL but low malicious indicators suggests compromised marketing infrastructure.
+D6477,Malicious,0.90,URL spoof detected (confirmed malicious) with high sender reputation (0.982) and final URL known malicious with visual brand similarity (0.457) confirms sophisticated phishing using brand impersonation.
+D6478,Malicious,0.95,Legal threat with exploit pattern detected (confirmed malicious indicator) and high AMSI score (0.889) confirms sophisticated phishing attack.
+D6479,Warning,0.80,Link click with known malicious reply path and high SMTP ASN risk (0.778) with high marketing score (0.775) suggests phishing requiring verification.
+D6480,Spam,0.80,Bank detail update with expired SSL and high visual brand similarity (0.569) but valid SPF suggests financial marketing with poor security.
+D6481,Warning,0.85,VPN/MFA reset with known malicious return path and self-signed SSL with high visual similarity (0.177) suggests phishing requiring investigation.
+D6482,Warning,0.80,Wire transfer with high sender temp email likelihood (0.687) and YARA match with expired SSL and high marketing score (0.828) suggests BEC requiring verification.

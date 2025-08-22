@@ -1,0 +1,50 @@
+D7283,Malicious,0.85,DMARC enforced, packer detected, high AMSI score (0.86), macro enabled document, high exfiltration score (0.73), YARA matches, urgency score high
+D7284,No Action,0.90,Clean reputation scores, passing SPF/authentication, minimal threat indicators, legitimate traffic pattern
+D7285,Malicious,0.85,Legal threat request, very high exfiltration score (0.97), exploit pattern detected, failed SPF/DMARC, user marked as spam before
+D7286,No Action,0.80,Link click request, low temp email likelihood, failed SPF, moderate exfiltration score, mismatch SSL but overall clean
+D7287,Spam,0.80,Bank detail update request, high temp email likelihood (0.31), failed SPF, but passing other security checks
+D7288,Warning,0.70,VPN/MFA reset request, return path mismatch, self-signed SSL, high SMTP reputation (0.72), suspicious processes detected
+D7289,Warning,0.75,Wire transfer request, high exfiltration score (0.77), self-signed SSL, failed SPF/DKIM, but low other threat scores
+D7290,Warning,0.75,Document download request, moderate sandbox score (0.22), redirect chain detected, failed SPF/permerror DMARC
+D7291,No Action,0.80,Clean reputation scores, failed SPF/DMARC but low threat indicators, no malicious content
+D7292,Malicious,0.85,Return path marked malicious, sensitive data request, redirect chain detected, high urgency score (0.59)
+D7293,Malicious,0.80,DMARC enforced, very high sandbox score (0.71), meeting request, low sender reputation but high metadata suspicious score
+D7294,Malicious,0.85,Very high sandbox score (0.88), high exfiltration score (0.72), high metadata suspicious score, passing authentication
+D7295,Malicious,0.90,Sender marked malicious, failed SPF/DKIM, elevated threat scores across multiple indicators
+D7296,Spam,0.70,Legal threat type, temporary email likelihood (0.36), failed DKIM, but no malicious content
+D7297,No Action,0.85,Link click request, high sender reputation (0.81), YARA matches but overall clean scores
+D7298,Spam,0.75,Bank detail update request, moderate reputation scores, passing SPF, no malicious indicators
+D7299,Malicious,0.85,VPN/MFA reset request, packer detected, high exfiltration score (0.78), high sandbox score (0.47), temporary email likelihood (0.34)
+D7300,Malicious,0.85,Wire transfer request, domain marked malicious, high sandbox score (0.81), self-signed SSL, high-risk profile
+D7301,Warning,0.75,Document download request, URL shortener detected, high exfiltration behavior, failed SPF
+D7302,Warning,0.70,Reply path known malicious, temporary email likelihood (0.18), but passing SPF, low overall threat scores
+D7303,Spam,0.70,Sensitive data request, softfail SPF, mismatch SSL, but low threat scores overall
+D7304,Warning,0.75,Meeting request, high exfiltration score (0.75), expired SSL, redirect chain detected
+D7305,Warning,0.70,High AMSI score (0.68), failed SPF/DKIM, moderate threat indicators
+D7306,Warning,0.75,Return path marked malicious, but low overall threat scores, passing SPF
+D7307,Warning,0.80,Legal threat type, high exfiltration score (0.71), IOC detected, failed DMARC
+D7308,Spam,0.70,Link click request, self-signed SSL, YARA match, but low threat scores
+D7309,No Action,0.85,Bank detail update request, clean reputation scores, passing SPF, legitimate pattern
+D7310,Malicious,0.85,VPN/MFA reset request, return path mismatch, very high temporary email likelihood (0.79), high exfiltration score (0.70)
+D7311,Warning,0.80,Wire transfer request, ActiveX detected, high exfiltration score (0.62), softfail SPF
+D7312,Warning,0.75,Document download request, high exfiltration score (0.74), moderate threat indicators
+D7313,No Action,0.85,Clean reputation scores, passing SPF, minimal threat indicators
+D7314,Warning,0.80,Sensitive data request, sender spoof detected, high urgency score, but low other threats
+D7315,No Action,0.75,Meeting request, moderate sender reputation, self-signed SSL but low threat scores
+D7316,Warning,0.70,High URL reputation score (0.98), mismatch SSL, moderate exfiltration behavior
+D7317,Warning,0.75,SMTP IP marked malicious, self-signed SSL, temporary email likelihood (0.25), high SMTP reputation (0.74)
+D7318,Warning,0.80,Legal threat, executable attachment, self-signed SSL, high SMTP reputation (0.91)
+D7319,Malicious,0.80,Link click request, 3 malicious attachments detected, expired SSL, moderate exfiltration score (0.52)
+D7320,Spam,0.70,Bank detail update request, failed SPF, but overall low threat indicators
+D7321,Malicious,0.85,VPN/MFA reset request, exploit pattern detected, high exfiltration score (0.87), revoked SSL, reply path marked malicious
+D7322,Warning,0.80,Wire transfer request, self-signed SSL, high exfiltration score (0.63), failed DMARC
+D7323,Warning,0.75,Document download request, YARA matches, high exfiltration score (0.82), failed all authentication
+D7324,No Action,0.85,Clean reputation scores, passing SPF, minimal threat indicators
+D7325,Spam,0.80,Sensitive data request, temporary email likelihood high (0.63), user marked as spam before
+D7326,Malicious,0.85,Meeting request, very high sandbox score (0.87), very high exfiltration score (0.82), self-signed SSL
+D7327,Malicious,0.80,2 malicious attachments detected, failed SPF, exploit pattern detected, high return path reputation (0.80)
+D7328,Warning,0.70,Domain marked malicious, high SMTP reputation (0.83) but clean other scores, passing SPF
+D7329,Warning,0.75,Legal threat type, temporary email likelihood (0.47), domain marked malicious, high SMTP reputation (0.79)
+D7330,Malicious,0.85,Link click request, high sandbox score (0.77), macro enabled document, very high exfiltration score (0.80), temp email likelihood (0.59)
+D7331,No Action,0.85,Bank detail update request, clean reputation scores, passing SPF, legitimate pattern
+D7332,Malicious,0.90,VPN/MFA reset request, macro enabled document, very high exfiltration score (0.92), failed SPF, high urgency score (0.58)

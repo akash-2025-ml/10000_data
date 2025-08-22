@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6583,No Action,0.85,Low risk communication with valid authentication and minimal suspicious indicators suggests legitimate email.
+D6584,No Action,0.85,Sensitive data request with valid authentication and low malicious indicators suggests legitimate communication.
+D6585,Malicious,0.98,Meeting request with packer_detected=1 (confirmed malicious) and high sender temp email likelihood (0.284) confirms advanced malware delivery.
+D6586,Warning,0.80,Communication with 10 IOCs detected and high exfiltration behavior (0.613) requires investigation.
+D6587,No Action,0.75,Low malicious indicators with failed DMARC but valid other authentication suggests configuration issues.
+D6588,Malicious,0.95,Legal threat with return_path_known_malicious=1 (confirmed threat) and high behavioral sandbox score (0.963) confirms phishing attack.
+D6589,Warning,0.85,Link click with high metadata suspicious score (0.895) and network call on open suggests phishing requiring verification.
+D6590,No Action,0.80,Bank detail update with return path mismatch but high URL reputation (0.889) suggests legitimate communication.
+D6591,Warning,0.85,VPN/MFA reset with 7 components malicious and high sender reputation (0.819) suggests sophisticated threat requiring investigation.
+D6592,Warning,0.80,Communication with 4 YARA matches and high sandbox execution time (297s) suggests investigation needed.
+D6593,No Action,0.80,Low risk communication with self-signed SSL but no other malicious indicators suggests legitimate with poor security.
+D6594,Warning,0.85,Communication with high AMSI score (0.911) and high visual brand similarity (0.849) suggests sophisticated phishing requiring investigation.
+D6595,Spam,0.80,Gift card request with failed SPF but low malicious indicators suggests scam spam rather than targeted threat.
+D6596,No Action,0.85,Meeting request with low malicious indicators and valid authentication suggests legitimate business communication.
+D6597,No Action,0.85,Low risk communication with valid authentication and minimal suspicious indicators suggests legitimate email.
+D6598,Warning,0.80,Communication with high metadata suspicious score (0.229) and 1 component malicious suggests investigation needed.
+D6599,Warning,0.80,Communication with high sender reputation (0.441) and image-only email but expired SSL suggests verification needed.
+D6600,Malicious,0.98,VPN/MFA reset with sender_known_malicious=1 (confirmed threat actor) confirms account takeover attempt.
+D6601,Warning,0.85,Communication with DNS morphing detected and high visual brand similarity (0.982) suggests phishing requiring verification.
+D6602,Malicious,0.95,Meeting request with return_path_known_malicious=1 (confirmed threat) and high visual brand similarity (0.462) confirms social engineering attack.
+D6603,Warning,0.80,Bank detail update with failed SPF/DKIM/DMARC authentication suggests verification needed.
+D6604,Warning,0.75,Invoice verification with failed DKIM/DMARC authentication suggests verification needed.
+D6605,No Action,0.80,Communication with bulk message indicator but high URL reputation (0.813) suggests legitimate marketing.
+D6606,Warning,0.80,Bank detail update with high visual brand similarity (0.659) suggests verification needed.
+D6607,Malicious,0.95,Gift card request with any_exploit_pattern_detected=1 (confirmed malicious) and user marked as spam confirms scam attack.
+D6608,Malicious,0.95,Communication with final_url_known_malicious=1 (confirmed threat) marked as spam by user confirms malicious URL delivery through spam.
+D6609,Warning,0.85,Communication with high metadata suspicious score (0.665) and high exfiltration behavior (0.855) requires investigation.
+D6610,No Action,0.85,Low risk communication with minimal suspicious indicators suggests legitimate email.
+D6611,Warning,0.85,Urgent callback with failed SPF/DMARC and high visual brand similarity (0.615) suggests social engineering requiring verification.
+D6612,Malicious,0.95,Communication with return_path_known_malicious=1 (confirmed threat) from compromised infrastructure confirms attack.
+D6613,Warning,0.80,Communication with DNS morphing detected and revoked SSL certificate suggests compromised infrastructure requiring investigation.
+D6614,Warning,0.75,Communication with DNS morphing detected and bulk message indicator suggests investigation needed.
+D6615,Warning,0.80,Communication with high sender temp email likelihood (0.877) suggests verification needed.
+D6616,Warning,0.85,Gift card request with high sender reputation (0.506) but failed DKIM suggests verification needed.
+D6617,Warning,0.80,Bank detail update with bulk message indicator and self-signed SSL suggests verification needed.
+D6618,No Action,0.85,Low risk communication with valid authentication and minimal suspicious indicators suggests legitimate email.
+D6619,Warning,0.80,Communication with executable attachment and high behavioral sandbox score (0.310) requires investigation.
+D6620,Malicious,0.95,Communication with final_url_known_malicious=1 (confirmed threat) and high sender temp email likelihood (0.935) confirms phishing attack.
+D6621,Warning,0.85,Communication with VBScript/JavaScript detected and high metadata suspicious score (0.691) requires investigation.
+D6622,Warning,0.85,Wire transfer with image-only email and high exfiltration behavior (0.850) suggests BEC requiring verification.
+D6623,No Action,0.80,Invoice verification with high URL reputation (0.954) and valid authentication suggests legitimate communication despite self-signed SSL.
+D6624,Warning,0.85,Wire transfer with high exfiltration behavior (0.877) and bulk message indicator suggests BEC requiring verification.
+D6625,Warning,0.80,Invoice payment with high sender temp email likelihood (0.851) and high behavioral sandbox score (0.324) requires investigation.
+D6626,Malicious,0.95,Urgent callback with final_url_known_malicious=1 (confirmed threat) and high metadata suspicious score (0.570) confirms social engineering attack.
+D6627,Warning,0.85,VPN/MFA reset with high metadata suspicious score (0.531) and high exfiltration behavior (0.510) requires investigation.
+D6628,Malicious,0.95,Communication with smtp_ip_known_malicious=1 (confirmed threat) and high visual brand similarity (0.856) confirms attack from compromised infrastructure.
+D6629,Malicious,0.95,Communication with final_url_known_malicious=1 (confirmed threat) and revoked SSL certificate confirms attack from compromised infrastructure.
+D6630,Malicious,0.95,Communication with final_url_known_malicious=1 (confirmed threat) and high exfiltration behavior (0.929) confirms advanced phishing attack.
+D6631,Warning,0.80,Legal threat with high sender temp email likelihood (0.416) and failed SPF/DMARC suggests phishing requiring verification.
+D6632,Warning,0.80,Document download with high sender reputation (0.838) but self-signed SSL suggests verification needed.

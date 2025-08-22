@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6733,Warning,0.72,Meeting request with moderate risk. SPF pass but DMARC temperror. Winword.exe process and exfiltration score (0.58) with exploit pattern detected. Low spam score (0.01) but behavioral concerns.
+D6734,Malicious,0.85,High sandbox score (0.65) with VBScript/JavaScript detected. DMARC fail and very high spam score (0.38). Behavioral patterns indicate active malware execution attempt.
+D6735,No Action,0.92,Clean profile with all authentication passing. Very low threat scores across all indicators. Normal email with minimal risk factors.
+D6736,Warning,0.75,Legal threat email with high exfiltration score (0.86). Outlook.exe process but otherwise moderate risks. DMARC temperror requires caution.
+D6737,Malicious,0.94,Critical: 8 YARA matches, metadata suspicious score (0.96), exfiltration behavior (0.94). Link click with expired SSL. Clear malicious intent with multiple red flags.
+D6738,Spam,0.81,Bank detail update with self-signed SSL and high spam score (0.63). DMARC permerror and moderate sender reputation indicate phishing attempt.
+D6739,Malicious,0.89,VPN/MFA reset with PowerShell.exe execution. Self-signed SSL, DMARC fail, high metadata score (0.68). Critical security bypass attempt.
+D6740,Malicious,0.83,Wire transfer request with high exfiltration score (0.82). DMARC fail for financial email is critical red flag. Likely financial fraud attempt.
+D6741,Warning,0.78,Document download with high exfiltration (0.92) but valid SSL. Moderate spam score (0.61). Potential credential harvesting.
+D6742,No Action,0.88,Clean email with DMARC enforced and SPF pass. No suspicious behaviors or attachments. Legitimate communication.
+D6743,Warning,0.74,Sensitive data request with expired SSL. Reply path differs from sender. DMARC fail but moderate overall risk.
+D6744,Malicious,0.87,Has executable attachment with high metadata score (0.48) and AMSI score (0.86). Expired SSL and SPF fail. Active threat.
+D6745,Spam,0.79,High temp email likelihood (0.66) with spam score (0.85). DMARC fail but no immediate malicious indicators.
+D6746,Malicious,0.93,Domain known malicious with 3 links detected. SPF fail indicates spoofing. Outdated TLS 1.1 adds to risk profile.
+D6747,Malicious,0.95,Reply path known malicious with VBScript/JavaScript detected. High spam score (0.82) and self-signed SSL. Clear malicious intent.
+D6748,Spam,0.88,Link click with extreme spam score (0.94) and temp email likelihood (0.89). Classic spam campaign indicators.
+D6749,Spam,0.86,Bank detail update with high spam score (0.81). Expired SSL but otherwise typical spam patterns.
+D6750,Malicious,0.82,VPN/MFA reset with macro-enabled document and PowerShell execution. Despite valid SSL, behavioral patterns indicate attack.
+D6751,Malicious,0.96,Wire transfer with packer detected and executable attachment. Spam score (0.96) and malicious reply path. Critical financial threat.
+D6752,Malicious,0.84,Document download with final URL known malicious. Direct malware delivery attempt despite valid SSL.
+D6753,No Action,0.76,Low risk profile with only self-signed SSL concern. Reply path differs but minimal other indicators.
+D6754,Warning,0.71,Sensitive data request with self-signed SSL. Moderate spam score (0.49) but no critical indicators.
+D6755,Malicious,0.81,Packer detected with YARA match. Despite valid SSL, executable behaviors indicate active threat.
+D6756,Warning,0.73,VBScript/JavaScript detected but low overall risk scores. Authentication failures present moderate concern.
+D6757,Malicious,0.90,Domain known malicious with revoked SSL certificate. High sender reputation issue (0.69). Clear security threat.
+D6758,Warning,0.79,Legal threat with high sandbox execution time (3.94). Valid SSL but suspicious process patterns.
+D6759,Malicious,0.91,8 IOC counts detected with self-signed SSL. Link click request with Acrobat.exe. Multiple threat indicators.
+D6760,Spam,0.94,Bank detail update with extreme spam score (0.97). Certificate mismatch and 4 links. Classic phishing spam.
+D6761,Malicious,0.95,VPN/MFA reset with macro document and PowerShell. Despite DMARC enforced, behavioral patterns indicate targeted attack.
+D6762,Warning,0.82,Wire transfer with high sandbox time (39.07). Valid SSL but suspicious patterns for financial request.
+D6763,Spam,0.87,Document download with extreme spam score (0.97). Outdated TLS 1.0 indicates spam infrastructure.
+D6764,No Action,0.85,Clean profile with SPF pass and valid SSL. 4 links detected but low risk scores throughout.
+D6765,Warning,0.69,Sensitive data request with moderate risks. Some authentication concerns but no critical indicators.
+D6766,Malicious,0.92,Reply path known malicious with expired SSL. High spam score (0.96) for meeting request indicates impersonation.
+D6767,Warning,0.77,Self-signed SSL with macro document and 4 links. Moderate risk profile requires caution.
+D6768,No Action,0.83,Generally clean with valid SSL. Softfail SPF is only concern in otherwise legitimate email.
+D6769,Malicious,0.88,Legal threat with domain mismatch and 3 IOC counts. High reputation risk (0.79) indicates threat actor.
+D6770,Malicious,0.94,Malicious attachment count=1 with executable and macro document. Exploit pattern detected. Active malware.
+D6771,No Action,0.81,Bank detail update with clean security profile. Valid SSL and low risk scores indicate legitimate transaction.
+D6772,Malicious,0.92,VPN/MFA reset with PowerShell and high metadata score (0.81). Unscannable attachment indicates evasion.
+D6773,Warning,0.80,Wire transfer with high sender reputation (0.92) but authentication failures. Requires verification.
+D6774,Malicious,0.85,6 YARA matches with expired SSL and TLS 1.0. Clear malware signatures detected.
+D6775,Warning,0.68,Expired SSL with link detected but no critical indicators. Moderate risk profile.
+D6776,No Action,0.74,Sensitive data request with temp email (0.74) but valid SSL and low actual threat scores.
+D6777,Warning,0.83,DMARC enforced but unscannable attachment and redirect chain. Potential evasion technique.
+D6778,Warning,0.75,2 YARA matches with expired SSL. Moderate spam characteristics require caution.
+D6779,Spam,0.84,High reply path reputation issue (0.85) with 4 links. Authentication failures indicate spam.
+D6780,Malicious,0.89,Legal threat with final URL known malicious. High domain risk (0.73) confirms threat actor.
+D6781,Malicious,0.93,Reply path known malicious with self-signed SSL. 4 links with malicious final URL. Active attack.
+D6782,Malicious,0.97,Sender known malicious (flag=1). Bank detail update from confirmed malicious source. Critical threat.

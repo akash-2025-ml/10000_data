@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6333,Warning,0.75,High metadata suspicious score (0.847) and presence of suspicious parent processes (winword.exe/powershell.exe/regsvr32.exe) with high entropy (90.355) indicate potential malicious document. However no actual malicious files detected and SPF softfail suggests suspicious but not confirmed malicious.
+D6334,Malicious,0.95,Wire transfer request with high sender temp email likelihood (0.619) and urgency keywords (0.8) combined with SPF pass but DMARC fail indicates business email compromise attempt targeting financial fraud.
+D6335,Warning,0.70,DMARC permerror and SPF/DKIM failures with self-signed SSL certificate indicate poor security configuration. While not directly malicious shows compromised security posture that could be exploited.
+D6336,Spam,0.85,High sender temp email likelihood (0.517) with marketing keywords and normal authentication passing indicates likely marketing spam rather than malicious content.
+D6337,No Action,0.90,Low risk scores across all indicators with valid authentication and no suspicious content detected. Appears to be legitimate email communication.
+D6338,Malicious,0.90,Gift card request with high urgency keywords (0.456) and return path mismatch indicates classic gift card scam targeting employees impersonating executives.
+D6339,Warning,0.80,Wire transfer request with high AMSI suspicion score (0.838) and behavioral issues but valid authentication suggests potential BEC attempt requiring verification.
+D6340,Warning,0.75,Document download request with malicious domain detected and high suspicious behaviors but mixed authentication results indicate phishing attempt.
+D6341,Spam,0.80,High spam score (0.952) with SMTP IP marked malicious and expired SSL certificate indicates bulk spam campaign rather than targeted attack.
+D6342,Malicious,0.85,Sensitive data request with high sender temp email likelihood (0.655) and marketing keywords (0.698) combined with behavioral anomalies indicates credential harvesting attempt.
+D6343,Warning,0.80,Meeting request with high sender temp email likelihood (0.676) and multiple suspicious behaviors including high exfiltration score (0.946) suggests reconnaissance or social engineering.
+D6344,Warning,0.70,High SMTP geo risk (0.622) with expired SSL and mixed behaviors indicates potentially compromised sender infrastructure requiring caution.
+D6345,Spam,0.75,High marketing score (0.932) with legitimate authentication but suspicious reply path indicates marketing spam rather than malicious content.
+D6346,Malicious,0.85,Legal threat with high metadata suspicious score (0.550) and visual similarity to known brand (0.473) indicates phishing using fear tactics.
+D6347,Malicious,0.90,Link click request with multiple IOCs detected (8) and failed authentication with visual similarity to brand indicates credential theft phishing.
+D6348,Malicious,0.85,Bank detail update request with failed SPF/DKIM/DMARC and visual similarity score indicates financial fraud attempt through account takeover.
+D6349,Malicious,0.95,Known malicious sender with VPN/MFA reset request and high sender temp email likelihood (0.981) with visual brand similarity (0.642) indicates account takeover attempt.
+D6350,Malicious,0.90,Wire transfer request with known malicious return path and marketing keywords with network behaviors indicates financial fraud BEC attack.
+D6351,Warning,0.75,Document download request with high metadata suspicious score (0.298) and exfiltration behaviors but valid authentication suggests caution needed.
+D6352,Warning,0.70,Self-signed SSL with failed DKIM and moderate suspicious behaviors indicates potentially compromised infrastructure but not confirmed malicious.
+D6353,Spam,0.80,Sensitive data request with high marketing score (0.875) and valid authentication indicates data harvesting spam rather than targeted attack.
+D6354,Warning,0.75,Meeting request with high sender reputation but suspicious behaviors and expired SSL certificate indicates potential social engineering requiring verification.
+D6355,Warning,0.65,Executable attachment with moderate suspicious scores but valid authentication suggests potentially unwanted program rather than malware.
+D6356,Spam,0.85,High marketing keywords (0.800) with SSL mismatch and moderate spam scores indicates marketing spam campaign.
+D6357,Malicious,0.90,Legal threat with high sandbox behavioral score (0.996) and exfiltration behaviors (0.848) indicates malware delivery through fear tactics.
+D6358,Malicious,0.85,Link click request with enforced DMARC but failed and moderate phishing indicators suggests credential theft attempt.
+D6359,Malicious,0.90,Bank detail update request with known malicious domains (7) and failed SPF with expired SSL indicates financial fraud phishing.
+D6360,Warning,0.80,VPN/MFA reset with high behavioral scores and reply path difference but valid some authentication suggests verification needed before action.
+D6361,Warning,0.75,Wire transfer request with URL shortener detected and moderate suspicious scores indicates potential BEC requiring manual review.
+D6362,Malicious,0.95,Document download with 2 malicious attachments detected and high exfiltration score (0.671) confirms malware delivery attempt.
+D6363,No Action,0.85,Low risk scores with valid authentication and no suspicious behaviors detected indicates legitimate communication.
+D6364,Warning,0.80,Sensitive data request with malicious domain and failed SPF but low other risk scores suggests phishing attempt requiring caution.
+D6365,Malicious,0.90,Executable attachment with file hash marked malicious and meeting request with suspicious behaviors confirms malware delivery.
+D6366,Spam,0.85,Known malicious return path with high marketing score (0.889) indicates spam campaign rather than targeted attack.
+D6367,No Action,0.90,Enforced DMARC with valid authentication and low risk scores across all indicators suggests legitimate email.
+D6368,Malicious,0.85,Legal threat with 8 IOCs detected and high SMTP geo/ASN risks with failed SPF indicates coordinated phishing campaign.
+D6369,Malicious,0.90,Link click with executable attachment and known malicious return path with high sandbox behavioral score confirms malware delivery.
+D6370,Warning,0.75,Bank detail update with enforced DMARC but moderate suspicious scores suggests potential BEC requiring verification.
+D6371,Malicious,0.95,VPN/MFA reset with macro enabled document and known malicious reply path with high suspicious scores confirms account takeover attempt.
+D6372,Warning,0.80,Wire transfer with high metadata suspicious score (0.867) and AMSI detection but valid authentication suggests BEC requiring verification.
+D6373,Warning,0.70,Document download with high sandbox execution time (116.8s) suggesting time-delayed payload but low other risks indicates caution needed.
+D6374,Spam,0.85,High spam score (0.943) with bulk message indicator and failed SPF/DKIM indicates spam campaign.
+D6375,Malicious,0.90,Sensitive data request with known malicious domain and expired SSL with visual brand similarity (0.740) indicates credential phishing.
+D6376,Warning,0.80,Meeting request with high behavioral scores and failed authentication but legitimate patterns suggests compromised account.
+D6377,Warning,0.85,Multiple YARA matches with self-signed SSL and known malicious domains (3) but low severity scores suggests suspicious but unconfirmed threat.
+D6378,No Action,0.85,Valid authentication with low risk scores and no suspicious behaviors indicates legitimate communication.
+D6379,Malicious,0.85,Legal threat with known malicious return path and self-signed SSL with suspicious behaviors indicates phishing using intimidation.
+D6380,Malicious,0.90,Link click with known malicious domain and high AMSI score (0.600) with suspicious behaviors confirms phishing attack.
+D6381,Warning,0.75,Bank detail update with known malicious domain but valid authentication and low severity scores suggests verification needed.
+D6382,Malicious,0.85,VPN/MFA reset with high spam score (0.957) and exfiltration behaviors confirms account takeover attempt through social engineering.

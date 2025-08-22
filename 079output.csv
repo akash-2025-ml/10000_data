@@ -1,0 +1,50 @@
+D7333,Warning,0.75,Wire transfer request, low temp email likelihood (0.028), failed DMARC, self-signed SSL, moderate exfiltration score (0.146), passing SPF/DKIM but suspicious behavioral patterns warrant monitoring
+D7334,Malicious,0.90,Document download request, extremely high metadata suspicious score (0.996), very high exfiltration score (0.966), failed SPF, TLS downgrade to 1.1, high-risk behavioral profile indicates malware
+D7335,No Action,0.85,Clean scores across all detection signals, passing DMARC, valid SSL, minimal threat indicators suggest legitimate email
+D7336,Warning,0.70,Sensitive data request, failed SPF, moderate sender reputation (0.290), high site visual similarity (0.795) with SSL downgrade - monitoring recommended
+D7337,Malicious,0.85,Meeting request, very high sandbox score (0.879), high exfiltration score (0.627), self-signed SSL, failed SPF/DMARC, high-risk behavioral profile indicates malware
+D7338,Warning,0.75,High metadata suspicious score (0.724), moderate exfiltration score (0.496), expired SSL, failed DMARC, moderate threat indicators warrant monitoring
+D7339,No Action,0.90,Clean scores across all detection signals, passing SPF/DKIM, valid SSL, very high site visual similarity (0.997) suggests legitimate email
+D7340,Spam,0.75,Legal threat type, moderate sender reputation (0.631), high content spam score (0.782), high urgency keywords (0.072), JavaScript detected - spam characteristics
+D7341,Spam,0.75,Link click request, high temp email likelihood (0.235), TLS downgrade to 1.1, high AMSI score (0.304), 4 links detected - spam characteristics
+D7342,Spam,0.80,Bank detail update request, high content spam score (0.465), high urgency keywords (0.324), high smtp_ip_reputation (0.763), permerror DMARC - spam characteristics
+D7343,Warning,0.75,VPN/MFA reset request, packer detected, high exfiltration score (0.519), high AMSI score (0.426), URL shortener detected, powershell execution - monitoring required
+D7344,Malicious,0.85,Wire transfer request, very high temp email likelihood (0.874), 5 IOCs detected, high exfiltration score (0.593), failed DMARC, TLS downgrade - high-risk phishing
+D7345,Warning,0.80,Document download request, high metadata suspicious score (0.154), 1 YARA match, high AMSI score (0.450), self-signed SSL, failed SPF/DKIM - monitoring required
+D7346,Warning,0.70,High temp email likelihood (0.467), failed SPF/DKIM, moderate return path reputation (0.311) but clean behavioral scores - monitoring recommended
+D7347,Warning,0.75,Sensitive data request, high temp email likelihood (0.160), expired SSL, high urgency keywords (0.046), failed authentication - monitoring required
+D7348,Malicious,0.85,Meeting request, very high temp email likelihood (0.688), high exfiltration score (0.628), self-signed SSL, failed SPF/DMARC, TLS downgrade - malicious activity
+D7349,Malicious,0.90,Very high exfiltration score (0.973), high metadata suspicious score (0.224), self-signed SSL, failed DKIM, high urgency keywords (0.525) - critical threat
+D7350,No Action,0.80,Clean behavioral scores, valid SSL, passing SPF, minimal threat indicators despite failed DMARC - appears legitimate
+D7351,Malicious,0.85,Legal threat type, executable attachment, very high exfiltration score (0.948), high AMSI score (0.263), 4 links detected, failed SPF - malicious activity
+D7352,Malicious,0.85,Link click request, very high metadata suspicious score (0.536), reply path known malicious, high exfiltration score (0.766), 4 links detected - malicious activity
+D7353,No Action,0.85,Clean behavioral scores, valid SSL, passing SPF, minimal threat indicators - legitimate email
+D7354,Warning,0.75,VPN/MFA reset request, moderate sender reputation (0.493), high AMSI score (0.716), high exfiltration score (0.507), powershell execution, failed authentication - monitoring required
+D7355,Malicious,0.85,Wire transfer request, high exfiltration score (0.863), failed DMARC, TLS downgrade, high smtp_ip_reputation (0.863) indicates potential compromise
+D7356,Warning,0.75,Document download request, moderate sender reputation (0.549), high metadata suspicious score (0.152), moderate exfiltration score (0.374), moderate urgency keywords (0.144) - monitoring required
+D7357,Spam,0.70,High content spam score (0.403), high urgency keywords (0.320), softfail SPF, high smtp_ip_reputation (0.476), high reply_path_reputation (0.457) - spam characteristics
+D7358,Warning,0.70,Sensitive data request, moderate sender reputation (0.472), high content spam score (0.226), TLS downgrade to 1.1 - monitoring recommended
+D7359,Warning,0.75,Meeting request, high metadata suspicious score (0.222), moderate exfiltration score (0.516), high urgency keywords (0.515), high smtp_ip_reputation (0.394) - monitoring required
+D7360,Spam,0.80,DMARC enforced, high temp email likelihood (0.220), high content spam score (0.804), high urgency keywords (0.158), TLS downgrade to 1.0 - spam characteristics
+D7361,No Action,0.80,Clean behavioral scores, valid SSL, minimal threat indicators despite failed authentication - appears legitimate
+D7362,Warning,0.75,Legal threat type, DMARC enforced, return path mismatch, high metadata suspicious score (0.243), self-signed SSL, high urgency keywords (0.802) - monitoring required
+D7363,Malicious,0.85,Link click request, high temp email likelihood (0.239), malicious file hash detected, high metadata suspicious score (0.220), high urgency keywords (0.773) - malicious file detected
+D7364,Malicious,0.85,Sender marked malicious, bank detail update request, high return path reputation (0.509), high smtp_ip_reputation (0.519), high urgency keywords (0.091) - malicious sender
+D7365,Malicious,0.90,VPN/MFA reset request, very high exfiltration score (0.735), self-signed SSL, high urgency keywords (0.480), very high site visual similarity (0.995), powershell execution - malware activity
+D7366,Warning,0.80,Wire transfer request, very high metadata suspicious score (0.644), high urgency keywords (0.920), moderate exfiltration score (0.263) - monitoring required
+D7367,Malicious,0.85,Document download request, very high metadata suspicious score (0.593), high exfiltration score (0.815), self-signed SSL, executable attachment, failed DKIM - malware detected
+D7368,Spam,0.75,Very high temp email likelihood (0.582), high smtp_ip_reputation (0.981), high url_reputation_score (0.528), permerror DMARC - spam characteristics
+D7369,Malicious,0.85,Sensitive data request, very high temp email likelihood (0.885), domain marked malicious, mismatch SSL, url_shortener_detected - malicious phishing
+D7370,Spam,0.80,Meeting request, high exfiltration score (0.731), high content spam score (0.862), high urgency keywords (0.042), failed authentication - spam characteristics
+D7371,Malicious,0.85,Moderate sender reputation (0.356), high temp email likelihood (0.272), very high exfiltration score (0.943), high smtp_ip_reputation (0.843) - malicious based on exfiltration score
+D7372,Warning,0.70,Moderate sender reputation (0.328), high smtp_ip_reputation (0.184), high urgency keywords (0.183), high content spam score (0.530), passing authentication - monitoring recommended
+D7373,Warning,0.80,Legal threat type, high sender reputation (0.609), very high metadata suspicious score (0.890), return path mismatch, high urgency keywords (0.686) - monitoring required
+D7374,Warning,0.75,Link click request, very high metadata suspicious score (0.568), ActiveX objects detected, reply path known malicious, expired SSL, high urgency keywords (0.748) - monitoring required
+D7375,Warning,0.70,Bank detail update request, return path mismatch, high url_reputation_score (0.529), very high site visual similarity (0.773), clean behavioral scores - monitoring recommended
+D7376,Malicious,0.85,Sender marked malicious, VPN/MFA reset request, reply path known malicious, high AMSI score (0.445), expired SSL, high urgency keywords (0.864) - malicious sender
+D7377,Malicious,0.90,Wire transfer request, 4 malicious attachments, very high metadata suspicious score (0.941), very high exfiltration score (0.844), high urgency keywords (0.0001) - critical threat
+D7378,Malicious,0.85,Document download request, executable attachment, high sender reputation (0.572), very high metadata suspicious score (0.782), high sandbox score (0.508), high exfiltration score (0.442), high urgency keywords (0.271) - malware detected
+D7379,No Action,0.80,Clean behavioral scores, expired SSL but token_validation_success, passing SPF/DKIM, minimal threat indicators - legitimate email
+D7380,Warning,0.70,Sensitive data request, high sender reputation (0.582), mismatch SSL, TLS downgrade to 1.0, minimal urgency keywords - monitoring recommended
+D7381,Malicious,0.85,Meeting request, very high sandbox score (0.725), high smtp_ip_reputation (0.565), failed authentication, high-risk executable detected - malware activity
+D7382,Warning,0.75,High metadata suspicious score (0.443), moderate sandbox score (0.148), moderate exfiltration score (0.379), high urgency keywords (0.162) - monitoring required

@@ -1,0 +1,51 @@
+Data ID,Classification,Confidence Score,Detailed Justification
+D6533,Malicious,0.95,Legal threat with reply_path_known_malicious=1 (confirmed threat) and high exfiltration behavior score (0.866) confirms phishing attack using fear tactics.
+D6534,Malicious,0.95,Link click with final_url_known_malicious=1 (confirmed threat) and high exfiltration behavior (0.426) confirms phishing attack.
+D6535,No Action,0.85,Bank detail update with high sender reputation (0.627) and valid authentication suggests legitimate banking communication.
+D6536,Warning,0.85,VPN/MFA reset with high metadata suspicious score (0.489), high exfiltration behavior (0.984), and high-risk role targeting requires investigation.
+D6537,Warning,0.80,Wire transfer with high sender temp email likelihood (0.398), 7 YARA matches, and failed authentication suggests BEC requiring verification.
+D6538,Warning,0.80,Document download with high behavioral sandbox score (0.434) and high visual brand similarity (0.209) suggests phishing requiring investigation.
+D6539,Warning,0.80,Communication with DNS morphing detected and high-risk role targeting with failed authentication requires investigation.
+D6540,Malicious,0.95,Sensitive data request with final_url_known_malicious=1 (confirmed threat) and failed authentication confirms credential harvesting attack.
+D6541,Warning,0.80,Meeting request with ActiveX objects detected and high exfiltration behavior (0.590) suggests social engineering requiring verification.
+D6542,No Action,0.75,Low risk communication marked as spam before but low malicious indicators suggests legitimate with poor reputation.
+D6543,No Action,0.80,High sender reputation (0.897) with low risk scores across indicators suggests legitimate communication despite self-signed SSL.
+D6544,Warning,0.75,Legal threat with return path mismatch and moderate metadata suspicious score (0.060) suggests investigation needed.
+D6545,Warning,0.80,Link click with high metadata suspicious score (0.180) and exfiltration behavior (0.323) suggests phishing requiring verification.
+D6546,No Action,0.80,Bank detail update with reply path difference but low malicious indicators and high URL reputation (0.841) suggests legitimate communication.
+D6547,Malicious,0.98,VPN/MFA reset with packer_detected=1 (confirmed malicious) and 6 components malicious confirms advanced malware delivery.
+D6548,Warning,0.85,Wire transfer with executable attachment and high behavioral sandbox score (0.593) suggests BEC requiring investigation.
+D6549,Warning,0.80,Document download with DNS morphing detected and bulk message indicator suggests phishing requiring verification.
+D6550,No Action,0.80,Low risk communication with DMARC enforced and high URL rendering behavior (0.889) suggests legitimate with configuration issues.
+D6551,No Action,0.85,Sensitive data request with valid authentication and low malicious indicators suggests legitimate communication.
+D6552,No Action,0.85,Meeting request with low risk scores and valid authentication suggests legitimate business communication.
+D6553,Warning,0.80,Communication with malicious_attachment_Count=1 but low other malicious indicators requires investigation.
+D6554,No Action,0.75,Low risk communication with self-signed SSL but no other malicious indicators suggests legitimate with poor security.
+D6555,Warning,0.85,Legal threat with 9 IOCs detected and high metadata suspicious score (0.247) suggests sophisticated phishing requiring investigation.
+D6556,Warning,0.80,Link click with high AMSI score (0.537) and image-only email with failed authentication suggests phishing requiring verification.
+D6557,No Action,0.85,Bank detail update with low malicious indicators and valid authentication suggests legitimate banking communication.
+D6558,Malicious,0.95,VPN/MFA reset with any_file_hash_malicious=1 (confirmed threat) and expired SSL confirms malware delivery through phishing.
+D6559,Warning,0.80,Wire transfer with return path mismatch and high metadata suspicious score (0.349) suggests BEC requiring verification.
+D6560,Warning,0.85,Document download with high metadata suspicious score (0.919) but low other risks suggests investigation needed.
+D6561,Malicious,0.95,Communication with return_path_known_malicious=1 (confirmed threat) and high sender temp email likelihood (0.771) confirms attack from compromised infrastructure.
+D6562,Malicious,0.95,Sensitive data request with domain_known_malicious=1 (confirmed threat) confirms credential harvesting attack.
+D6563,Warning,0.80,Meeting request with high metadata suspicious score (0.052) and image-only email suggests social engineering requiring verification.
+D6564,Warning,0.75,Communication with 1 IOC detected and bulk message indicator but low other risks suggests investigation needed.
+D6565,No Action,0.80,Low risk communication with image-only email but no malicious indicators suggests legitimate visual communication.
+D6566,Warning,0.85,Legal threat with executable attachment and reply path difference suggests phishing requiring investigation.
+D6567,Warning,0.85,Link click with high metadata suspicious score (0.585) and 3 components malicious suggests phishing requiring verification.
+D6568,No Action,0.85,Bank detail update with low malicious indicators and valid authentication suggests legitimate banking communication.
+D6569,Warning,0.80,VPN/MFA reset with high metadata suspicious score (0.682) and image-only email suggests phishing requiring verification.
+D6570,Malicious,0.95,Wire transfer with url_decoded_spoof_detected=1 (confirmed threat) and URL redirect chain confirms BEC financial fraud attack.
+D6571,Warning,0.85,Document download with sender spoof detected and high reply path reputation (0.742) suggests investigation needed.
+D6572,Warning,0.80,Communication with sender spoof detected and high reply path reputation (0.453) suggests compromised sender requiring verification.
+D6573,Warning,0.85,Sensitive data request with high visual brand similarity (0.770) suggests credential harvesting requiring verification.
+D6574,Warning,0.80,Meeting request with high visual brand similarity (0.583) suggests social engineering requiring verification.
+D6575,Warning,0.85,Communication with high behavioral sandbox score (0.815) and high sender reputation (0.831) suggests sophisticated threat requiring investigation.
+D6576,No Action,0.80,High sender reputation (0.818) with softfail SPF but low malicious indicators suggests legitimate communication with configuration issues.
+D6577,Warning,0.85,Legal threat with high behavioral sandbox score (0.754) and self-signed SSL suggests phishing requiring investigation.
+D6578,Spam,0.80,Link click with high sender temp email likelihood (0.574) and high marketing indicators suggests click-bait spam campaign.
+D6579,No Action,0.85,Bank detail update with high visual brand similarity (0.311) but low other risks suggests legitimate banking communication.
+D6580,Warning,0.85,VPN/MFA reset with high sender temp email likelihood (0.874), executable attachment, and 3 IOCs suggests phishing requiring investigation.
+D6581,Warning,0.85,Wire transfer with high sender reputation (0.896) and high exfiltration behavior (0.948) suggests BEC requiring verification.
+D6582,Malicious,0.98,Document download with sender_known_malicious=1 (confirmed threat actor) and network call on open confirms malware delivery.
